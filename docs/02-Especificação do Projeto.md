@@ -14,11 +14,12 @@ Personas
 
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-fitness-app/assets/129282137/941903a9-0426-441b-a48c-9f24569ace5c)
 
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-fitness-app/assets/129282137/b9fed7b1-a67d-4dcf-85e4-7f47d09f8a9f)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-fitness-app/assets/129282137/e92c6ee9-1edb-477d-a1ab-2bb63de5e0ff)
 
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-fitness-app/assets/129282137/13d12ad3-dced-4686-bd52-7b8cf2648f6b)
 
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-fitness-app/assets/129282137/745be650-5d2a-4f65-a9dc-7f9724e5a879)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-fitness-app/assets/129282137/f954ea9c-5d19-4d4d-a8b9-315351fdd354)
+
 
 
 
