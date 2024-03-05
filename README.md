@@ -1,4 +1,4 @@
-# TÍTULO DO PROJETO
+# Fitness APP
 
 Análise e Desenvolvimento de Sistemas
 
