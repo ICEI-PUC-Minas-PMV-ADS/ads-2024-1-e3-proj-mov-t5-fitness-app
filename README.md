@@ -1,23 +1,25 @@
 # TÍTULO DO PROJETO
 
-`CURSO`
+Análise e Desenvolvimento de Sistemas
 
-`DISCIPLINA`
+Projeto Mobile
 
-`SEMESTRE`
+3º Semestre
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
-
+Desenvolvimento de um aplicativo de academia, facilitando a organização de treinos e horários, trazendo diversos benefícios no quesito de organização e motivação diárias para sair do sedentarismo ou até mesmo se aperfeiçoar no seu desenvolvimento nos treinos
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+* Bianca Nicoly Dias Matos
+* Breno Augusto França da Silva
+* Izabela Apolinário do Nascimento
+* Roger Sato
+* Thiago Almeida Amorim
+* Wilian Pereira de Aquino Junior
+Wilian Pereira de Aquino Junior
 
 ## Orientador
 
-* Nome completo do professor 1
+Cristiano de Macêdo Neto
 
 ## Instruções de utilização
 
