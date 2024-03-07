@@ -1,14 +1,22 @@
 
 # Metodologia
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a></span>
+Para o desenvolvimento do projeto do aplicativo de academia, a equipe adotará a seguinte metodologia de trabalho:
 
-Descreva aqui a metodologia de trabalho do grupo para atacar o problema. Definições sobre os ambiente de trabalho utilizados pela  equipe para desenvolver o projeto. Abrange a relação de ambientes utilizados, a estrutura para gestão do código fonte, além da definição do processo e ferramenta através dos quais a equipe se organiza (Gestão de Times).
+Ambientes de Trabalho: A equipe utilizará uma combinação de ambientes físicos e virtuais para facilitar a colaboração. Isso inclui reuniões presenciais para discussões estratégicas e sessões de brainstorming, bem como o uso de plataformas de colaboração online para comunicação diária e compartilhamento de documentos.
+
+Gestão do Código Fonte: O código fonte do projeto será gerenciado através de um sistema de controle de versão Git. Isso permitirá que a equipe colabore efetivamente no código, com cada membro capaz de trabalhar em partes diferentes do projeto simultaneamente. O repositório do código será hospedado em uma plataforma como o GitHub, facilitando o acesso e a colaboração.
+
+Processo e Ferramenta de Organização da Equipe: A equipe adotará uma abordagem ágil para o desenvolvimento do projeto, utilizando métodos do Scrum. Isso envolverá sprints regulares, reuniões diárias de stand-up e revisões de sprint para garantir que o projeto esteja progredindo conforme o planejado.
+
+A ferramenta de gestão de projetos será o Jira e será usada para rastrear o progresso das tarefas e garantir que todos os membros da equipe estejam cientes de suas responsabilidades. Isso também permitirá que a equipe identifique e resolva rapidamente quaisquer bloqueios que possam surgir.
+
+Essa metodologia de trabalho foi projetada para promover a colaboração eficaz dentro da equipe e garantir que o projeto seja concluído de maneira oportuna e eficiente. A flexibilidade inerente a essa abordagem também permitirá que a equipe se adapte a quaisquer mudanças ou desafios que possam surgir durante o desenvolvimento do projeto.
 
 ## Relação de Ambientes de Trabalho
 
-Os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a relação dos ambientes com seu respectivo propósito deverá ser apresentada em uma tabela que especifica que detalha Ambiente, Plataforma e Link de Acesso. 
-Nota: Vide documento modelo do estudo de caso "Portal de Notícias" e defina também os ambientes e frameworks que serão utilizados no desenvolvimento de aplicações móveis.
+![image](https://github.com/Alameda-Indiano/ads-2024-1-e3-proj-mov-t5-fitness-app/assets/81605100/21f7f07a-2154-408e-b9b6-b406e6e8eb04)
+
 
 ## Controle de Versão
 
@@ -31,16 +39,6 @@ etiquetas:
 - `enhancement`: uma funcionalidade precisa ser melhorada
 - `feature`: uma nova funcionalidade precisa ser introduzida
 
-Discuta como a configuração do projeto foi feita na ferramenta de versionamento escolhida. Exponha como a gerência de tags, merges, commits e branchs é realizada. Discuta como a gerência de issues foi realizada.
-
-> **Links Úteis**:
-> - [Microfundamento: Gerência de Configuração](https://pucminas.instructure.com/courses/87878/)
-> - [Tutorial GitHub](https://guides.github.com/activities/hello-world/)
-> - [Git e Github](https://www.youtube.com/playlist?list=PLHz_AreHm4dm7ZULPAmadvNhH6vk9oNZA)
->  - [Comparando fluxos de trabalho](https://www.atlassian.com/br/git/tutorials/comparing-workflows)
-> - [Understanding the GitHub flow](https://guides.github.com/introduction/flow/)
-> - [The gitflow workflow - in less than 5 mins](https://www.youtube.com/watch?v=1SXpE08hvGs)
-
 ## Gerenciamento de Projeto
 
 ### Divisão de Papéis
@@ -48,40 +46,30 @@ Discuta como a configuração do projeto foi feita na ferramenta de versionament
 Apresente a divisão de papéis entre os membros do grupo.
 
 Exemplificação: A equipe utiliza metodologias ágeis, tendo escolhido o Scrum como base para definição do processo de desenvolvimento. A equipe está organizada da seguinte maneira:
-- Scrum Master: Felipe Domingos;
-- Product Owner: Rommel Carneiro;
-- Equipe de Desenvolvimento: Pedro Penna, Pedro Ivo, Rodrigo Richard;
-- Equipe de Design: Simone Nogueira.
-
-> **Links Úteis**:
-> - [11 Passos Essenciais para Implantar Scrum no seu Projeto](https://mindmaster.com.br/scrum-11-passos/)
-> - [Scrum em 9 minutos](https://www.youtube.com/watch?v=XfvQWnRgxG0)
-> - [Os papéis do Scrum e a verdade sobre cargos nessa técnica](https://www.atlassian.com/br/agile/scrum/roles)
+- Scrum Master: Breno;
+- Product Owner: Bianca Matos;
+- Equipe de Desenvolvimento: Sato, Izabela, Thiago Amorim;
+- Equipe de Design: Will.
 
 ### Processo
 
-Coloque  informações sobre detalhes da implementação do Scrum seguido pelo grupo. O grupo deverá fazer uso do recurso de gerenciamento de projeto oferecido pelo GitHub, que permite acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução.
- 
-> **Links Úteis**:
-> - [Planejamento e Gestáo Ágil de Projetos](https://pucminas.instructure.com/courses/87878/pages/unidade-2-tema-2-utilizacao-de-ferramentas-para-controle-de-versoes-de-software)
-> - [Sobre quadros de projeto](https://docs.github.com/pt/issues/organizing-your-work-with-project-boards/managing-project-boards/about-project-boards)
-> - [Project management, made simple](https://github.com/features/project-management/)
-> - [Sobre quadros de projeto](https://docs.github.com/pt/github/managing-your-work-on-github/about-project-boards)
-> - [Como criar Backlogs no Github](https://www.youtube.com/watch?v=RXEy6CFu9Hk)
-> - [Tutorial Slack](https://slack.com/intl/en-br/)
+A implementação do Scrum pelo grupo será realizada da seguinte maneira:
+
+Planejamento do Sprint: No início de cada sprint, a equipe se reunirá para discutir os objetivos do sprint e as tarefas que precisam ser concluídas para atingir esses objetivos. Essas tarefas serão adicionadas ao backlog do sprint no GitHub.
+
+Reuniões Diárias de Stand-up: A equipe realizará reuniões diárias de stand-up para discutir o progresso em relação aos objetivos do sprint. Cada membro da equipe compartilhará o que eles realizaram no dia anterior, o que planejam realizar naquele dia e quaisquer obstáculos que possam estar impedindo seu progresso.
+
+Revisão do Sprint: No final de cada sprint, a equipe se reunirá para revisar o trabalho concluído durante o sprint e discutir quaisquer lições aprendidas que possam ser aplicadas a sprints futuros.
+
+Retrospectiva do Sprint: Após a revisão do sprint, a equipe realizará uma retrospectiva para refletir sobre o sprint e identificar áreas de melhoria.
+
+O grupo fará uso do recurso de gerenciamento de projeto oferecido pelo Jira. Isso permitirá que a equipe acompanhe o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução. O Jira permite a criação de quadros de projeto, onde as tarefas podem ser organizadas em colunas como “To do”, “In progress” e “Done”. Isso proporciona uma visão clara do progresso do projeto e ajuda a equipe a gerenciar seu trabalho de forma eficaz.
 
 ### Ferramentas
 
-As ferramentas empregadas no projeto são:
+As ferramentas que foram empregadas no desenvolvimento do projeto são:
 
-- Editor de código.
-- Ferramentas de comunicação
-- Ferramentas de desenho de tela (_wireframing_)
-
-O editor de código foi escolhido porque ele possui uma integração com o sistema de versão. As ferramentas de comunicação utilizadas possuem integração semelhante e por isso foram selecionadas. Por fim, para criar diagramas utilizamos essa ferramenta por melhor captar as necessidades da nossa solução.
-
-Liste quais ferramentas foram empregadas no desenvolvimento do projeto, justificando a escolha delas, sempre que possível.
- 
-> **Possíveis Ferramentas que auxiliarão no gerenciamento**: 
-> - [Slack](https://slack.com/)
-> - [Github](https://github.com/)
+Editor de Código: Visual Studio Code. Escolhemos o Visual Studio Code como nosso editor de código devido à sua ampla gama de funcionalidades, extensões disponíveis e integração direta com o GitHub. Isso facilita o gerenciamento do código e a colaboração entre os membros da equipe.
+Ferramentas de Comunicação: Microsoft Teams. Optamos pelo Microsoft Teams para a comunicação da equipe devido à sua capacidade de integrar-se com outras ferramentas que estamos usando, como o GitHub e o Jira. Ele também oferece recursos como videoconferência, compartilhamento de tela e canais de equipe, que são úteis para a colaboração em equipe.
+Ferramentas de Desenho de Tela (Wireframing): Figma. Escolhemos o Figma para o design de interface do usuário e wireframing devido à sua interface intuitiva e capacidade de colaboração em tempo real. Isso permite que nossa equipe de design trabalhe juntos de forma eficaz e compartilhe facilmente seus designs com o restante da equipe.
+Gerenciamento de Projeto: Jira. O Jira foi escolhido para o gerenciamento de projetos devido à sua robusta funcionalidade de rastreamento de problemas e integração com o GitHub. Ele permite que a equipe organize tarefas, acompanhe o progresso e gerencie sprints de forma eficiente.
