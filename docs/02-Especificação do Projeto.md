@@ -156,26 +156,28 @@ A matriz deve contemplar todos os elementos relevantes que fazem parte do sistem
 
 # Gerenciamento de Projeto
 
-De acordo com o PMBoK v6 as dez áreas que constituem os pilares para gerenciar projetos, e que caracterizam a multidisciplinaridade envolvida, são: Integração, Escopo, Cronograma (Tempo), Custos, Qualidade, Recursos, Comunicações, Riscos, Aquisições, Partes Interessadas. Para desenvolver projetos um profissional deve se preocupar em gerenciar todas essas dez áreas. Elas se complementam e se relacionam, de tal forma que não se deve apenas examinar uma área de forma estanque. É preciso considerar, por exemplo, que as áreas de Escopo, Cronograma e Custos estão muito relacionadas. Assim, se eu amplio o escopo de um projeto eu posso afetar seu cronograma e seus custos.
+O gerenciamento do projeto será realizado seguindo a metodologia ágil Scrum. Dado que temos uma equipe de 5 programadores inexperientes e um prazo de 5 meses, adotaremos as seguintes práticas:
 
 ## Gerenciamento de Tempo
 
-Com diagramas bem organizados que permitem gerenciar o tempo nos projetos, o gerente de projetos agenda e coordena tarefas dentro de um projeto para estimar o tempo necessário de conclusão.
+Para gerenciar o tempo efetivamente no projeto do aplicativo de academia, utilizaremos uma abordagem ágil e adaptável. Dado que temos uma equipe de 5 programadores inexperientes e um prazo de 5 meses, o Scrum será nossa base. Aqui está um diagrama simplificado para ilustrar o gerenciamento de tempo:
 
 ![Diagrama de rede simplificado notação francesa (método francês)](img/02-diagrama-rede-simplificado.png)
 
-O gráfico de Gantt ou diagrama de Gantt também é uma ferramenta visual utilizada para controlar e gerenciar o cronograma de atividades de um projeto. Com ele, é possível listar tudo que precisa ser feito para colocar o projeto em prática, dividir em atividades e estimar o tempo necessário para executá-las.
-
-![Gráfico de Gantt](img/02-grafico-gantt.png)
-
 ## Gerenciamento de Equipe
 
-O gerenciamento adequado de tarefas contribuirá para que o projeto alcance altos níveis de produtividade. Por isso, é fundamental que ocorra a gestão de tarefas e de pessoas, de modo que os times envolvidos no projeto possam ser facilmente gerenciados. 
+Ficou definido pelos integrantes da equipe que faremos o gerenciamento do projeto  (Definição de BackLog, Distribuição e Acompanhamento de Tarefas...) por meio da ferramenta Jira pois todos possuem mais familiaridade com a mesma. 
 
 ![Simple Project Timeline](img/02-project-timeline.png)
 
 ## Gestão de Orçamento
 
-O processo de determinar o orçamento do projeto é uma tarefa que depende, além dos produtos (saídas) dos processos anteriores do gerenciamento de custos, também de produtos oferecidos por outros processos de gerenciamento, como o escopo e o tempo.
+Para estimar o custo do projeto, foi preciso considerar o número de horas que cada programador vai trabalhar por dia e o número de dias que serão trabalhados durante o semestre.
 
-![Orçamento](img/02-orcamento.png)
+Vamos supor que cada programador trabalhe 2 horas por dia, 2 dias por semana. Isso dá um total de 4 horas por semana. Como o projeto tem uma duração de 5 meses, e considerando que um mês tem aproximadamente 4,33 semanas, temos um total de cerca de 22 semanas.
+
+Portanto, o número total de horas trabalhadas por um programador será de 4 horas/semana * 22 semanas = 88 horas.
+
+Como a equipe é composta por 5 programadores, o número total de horas trabalhadas pela equipe será de 88 horas/programador * 5 programadores = 440 horas.
+
+Finalmente, estimamos que o custo por hora/programador é de R$ 10,00 reais, o custo total do projeto será de 440 horas * R$ 10,00 reais/hora = R$ 4.400,00 reais.
