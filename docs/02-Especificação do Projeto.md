@@ -176,6 +176,13 @@ O gerenciamento adequado de tarefas contribuirá para que o projeto alcance alto
 
 ## Gestão de Orçamento
 
-O processo de determinar o orçamento do projeto é uma tarefa que depende, além dos produtos (saídas) dos processos anteriores do gerenciamento de custos, também de produtos oferecidos por outros processos de gerenciamento, como o escopo e o tempo.
 
-![Orçamento](img/02-orcamento.png)
+Para estimar o custo do projeto, foi preciso considerar o número de horas que cada programador vai trabalhar por dia e o número de dias que serão trabalhados durante o semestre.
+
+Vamos supor que cada programador trabalhe 2 horas por dia, 2 dias por semana. Isso dá um total de 4 horas por semana. Como o projeto tem uma duração de 5 meses, e considerando que um mês tem aproximadamente 4,33 semanas, temos um total de cerca de 22 semanas.
+
+Portanto, o número total de horas trabalhadas por um programador será de 4 horas/semana * 22 semanas = 88 horas.
+
+Como a equipe é composta por 5 programadores, o número total de horas trabalhadas pela equipe será de 88 horas/programador * 5 programadores = 440 horas.
+
+Finalmente, estimamos que o custo por hora/programador é de R$ 10,00 reais, o custo total do projeto será de 440 horas * R$ 10,00 reais/hora = R$ 4.400,00 reais.
