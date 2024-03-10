@@ -87,30 +87,31 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
+| RF-01 | Realizar cadastro/login na plataforma como aluno ou funcionário | Alta | 
+| RF-02 | Recuperar senha | Alta |
+| RF-03 | Consultar e alterar dados do aluno | Média |
+| RF-04 | Registro de Matrícula | Alta |
+| RF-05 | Consultar plano de treino do aluno e solicitar mudança se necessário | Média |
+| RF-06 | Avaliar progresso do aluno e realizar condicionamento físico se necessário | Média |
+| RF-07 | Processar o cancelamento da matrícula do aluno | Média |
+| RF-08 | Notificar a recepcionista quando o plano do aluno estiver prestes a expirar e oferecer opções de renovação | Média |
+| RF-09 | Entrar em contato com suporte | Baixa | 
+| RF-10 | Verificar o status do aluno através da matrícula antes de processar qualquer solicitação | Alta |
 
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
-
-Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
-
-- [Requisitos Funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-Lembre-se que cada requisito deve corresponder à uma e somente uma
-característica alvo da sua solução. Além disso, certifique-se de que
-todos os aspectos capturados nas Histórias de Usuário foram cobertos.
+| RNF-01 | O sistema deve ser rápido e responsivo | Alta |
+| RNF-02 | Criar uma interface de usuário intuitiva e fácil de usar, minimizando a curva de aprendizado para os usuários | Alta |
+| RNF-03 | Projetar o sistema de forma que ele possa ser escalado facilmente à medida que o número de usuários e atividades aumenta | Alta |
+| RNF-04 | O sistema deve ser estável e confiável, minimizando o tempo de inatividade não planejado | Alta |
+| RNF-05 | Permitir que os usuários personalizem seus planos de treino de acordo com suas necessidades e objetivos | Média |
+| RNF-06 | Facilitar a manutenção do sistema por meio de uma arquitetura bem organizada e documentação abrangente | Alta |
+| RNF-07 | Ter a capacidade de realizar atualizações e melhorias regulares no sistema | Alta |
+| RNF-08 | Garantir que o sistema possa ser integrado a sistemas de gestão de academias ou outras ferramentas que as academias já utilizem | Alta |
+| RNF-09 | Manter tempos de resposta curtos, especialmente durante a navegação no aplicativo e ao visualizar detalhes dos planos de treino | Alta |
+| RNF-10 | Possuir um mecanismo de busca eficiente permitindo que os usuários encontrem informações facilmente | Média |
 
 ## Restrições
 
@@ -118,27 +119,17 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
-|01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
+|RE-01| Restrição de Segurança - Todos os dados do usuário devem ser armazenados de forma segura para proteger a privacidade dos usuários. Isso é especialmente importante para informações sensíveis, como detalhes de contato e informações de pagamento |
+|RE-02| Restrição de Acessibilidade - O sistema deve ser facilmente acessível e utilizável por todos os usuários, independentemente de suas habilidades físicas ou tecnológicas. Isso pode envolver a adesão a diretrizes de acessibilidade na web e a inclusão de recursos como tamanhos de texto ajustáveis e opções de contraste de cores |
+|RE-03| Restrição de Manutenção - O sistema deve ser projetado de forma a facilitar atualizações e manutenção regulares. Isso é crucial para garantir que o sistema continue a funcionar de maneira eficaz e eficiente, mesmo à medida que novas atualizações de software são lançadas e novos equipamentos de academia são introduzidos |
 
+ 
 Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
+## Diagrama de Casos de Uso 
 
-> **Links Úteis**:
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
+![Diagrama de Casos de Uso ](img/casodeusoacademia.png)
+<center>Figura 1 - Diagrama de Casos de Uso - Descrição das funções e escopo do sistema. </center>
 
-## Diagrama de Casos de Uso
-
-O diagrama de casos de uso é o próximo passo após a elicitação de requisitos, que utiliza um modelo gráfico e uma tabela com as descrições sucintas dos casos de uso e dos atores. Ele contempla a fronteira do sistema e o detalhamento dos requisitos funcionais com a indicação dos atores, casos de uso e seus relacionamentos. 
-
-As referências abaixo irão auxiliá-lo na geração do artefato “Diagrama de Casos de Uso”.
-
-> **Links Úteis**:
-> - [Criando Casos de Uso](https://www.ibm.com/docs/pt-br/elm/6.0?topic=requirements-creating-use-cases)
-> - [Como Criar Diagrama de Caso de Uso: Tutorial Passo a Passo](https://gitmind.com/pt/fazer-diagrama-de-caso-uso.html/)
-> - [Lucidchart](https://www.lucidchart.com/)
-> - [Astah](https://astah.net/)
-> - [Diagrams](https://app.diagrams.net/)
 
 # Matriz de Rastreabilidade
 
