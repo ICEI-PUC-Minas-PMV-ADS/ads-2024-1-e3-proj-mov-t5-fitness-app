@@ -13,12 +13,12 @@ Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o pr
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
+	Analisando os dados abordados, nossa aplicação tem o intuito de auxiliar o usuário a superar os obstáculos e aprimorar a rotina de treinos, contribuindo para uma melhor qualidade de vida da sociedade. 
 
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
- 
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+	Através do Fitness App, o usuário poderá realizar uma melhor gestão de tempo, permitindo conciliar a agenda corrida do dia a dia com os compromissos na academia. O aplicativo ajudará o usuário a gerenciar seus treinos, oferecendo opções de exercícios, lembretes de treino e planejamento de rotinas adaptadas à disponibilidade de cada indivíduo.
+
+	Nossa proposta também permitirá que o usuário acesse várias informações importantes em um só lugar, como horários de aulas, disponibilidade de equipamentos e planos de treinamento personalizados. O Fitness App poderá centralizar todas essas informações, facilitando o acesso e a consulta rápida.
+
 
 ## Justificativa
 
