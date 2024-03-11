@@ -3,16 +3,13 @@
 Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
 
 ## Problema
-Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
 
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
+	Atualmente, cresce cada vez mais o número de praticantes de atividade física regular. É o que indica o estudo realizado pela Tecnofit em 2022, principal plataforma de gestão fitness do Brasil, cujas informações apontam crescimento de 18% no número total de alunos em comparação com o cenário pré-pandémico.
 
-Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
+	Melhor qualidade de vida e saúde são os principais incentivadores para quem busca se exercitar. Porém, mesmo as pessoas que querem realizar alguma atividade física, podem encontrar barreiras.
 
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
+	Segundo uma pesquisa realizada pelo Instituto Brasileiro de Geografia e Estatística (IBGE) em 2019, o maior impedimento para a realização de exercícios é a falta de tempo, responsável por 35,2% dos votos. Muitas pessoas encontram dificuldades em conseguir um plano de treinos personalizado, que seja fácil e intuitivo. 
+
 
 ## Objetivos
 
