@@ -133,16 +133,69 @@ Enumere as restrições à sua solução. Lembre-se de que as restrições geral
 
 # Matriz de Rastreabilidade
 
-A matriz de rastreabilidade é uma ferramenta usada para facilitar a visualização dos relacionamento entre requisitos e outros artefatos ou objetos, permitindo a rastreabilidade entre os requisitos e os objetivos de negócio. 
+Objetivo: Esta matriz de rastreabilidade mapeia os requisitos do aplicativo de academia com os casos de teste, garantindo que todos os requisitos sejam testados e validados.
 
-A matriz deve contemplar todos os elementos relevantes que fazem parte do sistema, conforme a figura meramente ilustrativa apresentada a seguir.
+Requisitos:
 
-![Exemplo de matriz de rastreabilidade](img/02-matriz-rastreabilidade.png)
+Funcionalidade:
 
-> **Links Úteis**:
-> - [Artigo Engenharia de Software 13 - Rastreabilidade](https://www.devmedia.com.br/artigo-engenharia-de-software-13-rastreabilidade/12822/)
-> - [Verificação da rastreabilidade de requisitos usando a integração do IBM Rational RequisitePro e do IBM ClearQuest Test Manager](https://developer.ibm.com/br/tutorials/requirementstraceabilityverificationusingrrpandcctm/)
-> - [IBM Engineering Lifecycle Optimization – Publishing](https://www.ibm.com/br-pt/products/engineering-lifecycle-optimization/publishing/)
+R1: Criar perfil com informações pessoais (nome, e-mail, foto, data de nascimento).
+R2: Definir metas de condicionamento físico (perder peso, ganhar massa muscular, melhorar resistência).
+R3: Registrar treinos (data, hora, tipo de exercício, duração, intensidade).
+R4: Visualizar progresso em relação às metas.
+R5: Conectar-se com amigos e familiares.
+R6: Compartilhar treinos e progresso com amigos e familiares.
+
+Usabilidade:
+
+R7: Interface intuitiva e fácil de usar.
+R8: Navegação fluida e eficiente.
+R9: Layout organizado e informativo.
+Desempenho:
+
+R10: Tempo de resposta rápido.
+R11: Suporte a diferentes dispositivos e resoluções de tela.
+R12: Funcionamento eficiente mesmo com baixa conectividade.
+Segurança:
+
+R13: Armazenamento seguro de dados pessoais.
+R14: Autenticação e autorização robustas.
+R15: Proteção contra ataques cibernéticos.
+
+Casos de Teste:
+
+Funcionalidade:
+
+CT1.1: Verificar criação de perfil com sucesso.
+CT1.2: Validar informações pessoais do usuário.
+CT2.1: Verificar definição de metas de condicionamento físico.
+CT2.2: Validar metas de condicionamento físico do usuário.
+CT3.1: Verificar registro de treino com sucesso.
+CT3.2: Validar informações do treino do usuário.
+CT4.1: Verificar visualização do progresso em relação às metas.
+CT4.2: Verificar precisão e utilidade do feedback.
+CT5.1: Verificar conexão com amigos e familiares.
+CT5.2: Verificar compartilhamento de treinos e progresso.
+
+Usabilidade:
+
+CT6.1: Avaliar a intuitividade da interface.
+CT6.2: Testar a fluidez e a eficiência da navegação.
+CT6.3: Avaliar a organização e o conteúdo informativo do layout.
+
+Desempenho:
+
+CT7.1: Medir o tempo de resposta do aplicativo.
+CT7.2: Testar o funcionamento em diferentes dispositivos e resoluções de tela.
+CT7.3: Avaliar o desempenho em diferentes condições de conectividade.
+
+Segurança:
+
+CT8.1: Testar a segurança do armazenamento de dados pessoais.
+CT8.2: Avaliar a robustez da autenticação e autorização.
+CT8.3: Testar a proteção contra ataques cibernéticos.
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-fitness-app/assets/115166241/72cfdfc4-2011-4e84-891f-643b2baf9155)
 
 
 # Gerenciamento de Projeto
