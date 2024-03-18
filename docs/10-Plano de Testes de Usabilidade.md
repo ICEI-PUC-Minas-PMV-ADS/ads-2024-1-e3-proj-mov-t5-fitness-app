@@ -42,7 +42,7 @@ RF-008 - </br>
 </tr>
 
 <tr>
-<td></td>
+<td>Critérios de êxito</td>
 <td> 
 <ul>
 <li>;</li>
