@@ -5,20 +5,20 @@
 <td>Caso de teste
 	
 </td>
-<td>CT-01 - Tempo de resposta da aplicação.
+<td>CT-01 - 
 </td>
 </tr>
 
 <tr>
 <td>Requisitos </br>
   Associados</td>
-<td>RF-001 - O Sistema deve possuir uma barra de menu. </br>
-RF-002 - O Sistema deve permitir Criar, Visualizar, Atualizar e Deletar Fornecedores </br>
-RF-003 - O Sistema deve permitir Criar Visualizar Atualizar e Deletar Produtos </br>
-RF-004 - O Sistema deve permitir o cadastro de Movimentações que aumentem ou diminuam o saldo de produtos </br>
-RF-005 - O Sistema deve permitir a consulta de saldos dos produtos </br>
-RF-006 - O Sistema deve permitir a geração de um relatório de entradas e saídas. </br>
-RF-008 - O Sistema deve possuir um Cadastro de usuários.</br>
+<td>RF-001 -  </br>
+RF-002 -  </br>
+RF-003 -  </br>
+RF-004 - </br>
+RF-005 -  </br>
+RF-006 -  </br>
+RF-008 - </br>
 
   
 </td>
@@ -26,32 +26,32 @@ RF-008 - O Sistema deve possuir um Cadastro de usuários.</br>
 
 <tr>
 <td>Objetivo do Teste</td>
-<td>Verificar e testar o tempo em que a aplicação leva para concluir a solicitação do usuário.</td>
+<td></td>
 </tr>
 
 <tr>
 <td>Passos</td>
 <td>1 - Acesse a aplicação.</br>
-2 - Verificar o tempo de resposta do menu.</br>
-3 - Verificar o tempo de resposta ao atualizar/deletar fornecedores.</br>
-4 - Verificar o tempo de resposta ao atualizar/deletar produtos.</br>
-5 - Verificar o tempo de resposta ao cadastrar movimentações.</br>
-6 - Verificar o tempo de resposta ao consultar saldos.</br>
-7 - Verificar o tempo de resposta ao gerar o relatório de entradas e saídas.</br>
-8 - Verificar o tempo de resposta ao fazer o cadastro de usuário.</br>
+2 - </br>
+3 - </br>
+4 - </br>
+5 - </br>
+6 - </br>
+7 - </br>
+8 - </br>
 </tr>
 
 <tr>
-<td>Critérios de êxito</td>
-<td>Cada ação realizada pelo usuário deve ter tempo de resposta de no máximo 15s. Estas ações incluem: 
+<td></td>
+<td> 
 <ul>
-<li>Navegar utilizando o menu;</li>
-<li>Cadastrar/modificar/excluir fornecedores;</li>
-<li>Cadastrar/modificar/excluir produtos;</li>
-<li>Cadastrar movimentações;</li>
-<li>Consultar saldos;</li>
-<li>Gerar relatório de entradas e saídas;</li>
-<li>Cadastrar Usuário.</li>
+<li>;</li>
+<li>;</li>
+<li>;</li>
+<li>;</li>
+<li>;</li>
+<li>;</li>
+<li></li>
 </ul>
 </td>
 </tr>
