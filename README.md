@@ -15,7 +15,7 @@ Desenvolvimento de um aplicativo de academia, facilitando a organização de tre
 * Roger Sato
 * Thiago Almeida Amorim
 * Wilian Pereira de Aquino Junior
-Wilian Pereira de Aquino Junior
+
 
 ## Orientador
 
