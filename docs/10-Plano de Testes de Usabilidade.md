@@ -45,12 +45,12 @@ RF-008 - </br>
 <td>Critérios de êxito</td>
 <td> 
 <ul>
-<li>;</li>
-<li>;</li>
-<li>;</li>
-<li>;</li>
-<li>;</li>
-<li>;</li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
 <li></li>
 </ul>
 </td>
@@ -65,34 +65,34 @@ RF-008 - </br>
 <td>Caso de teste
 	
 </td>
-<td>CT-02 - FeedBack da inclusão, atualização ou exclusão de produtos e fornecedores
+<td>CT-02 - 
 </td>
 </tr>
 
 <tr>
 <td>Requisitos </br>
   Associados</td>
-<td>RF-002 - O Sistema deve permitir Criar, Visualizar, Atualizar e Deletar Fornecedores. </br>
+<td>RF-002 -  </br>
   
 </td>
 </tr>
 
 <tr>
 <td>Objetivo do Teste</td>
-<td>Verificar a resposta do site ao manipular fornecedores</td>
+<td></td>
 </tr>
 
 <tr>
 <td>Passos</td>
-<td>1 - Acessar a aplicação.</br>
-2 - Incluir um novo fornecedor .</br>
-3 - Editar o cadastro do fornecedor. </br>
-4 - Excluir fornecedor. </br>
+<td>1 - </br>
+2 -</br>
+3 -  </br>
+4 -  </br>
 </tr>
 
 <tr>
 <td>Critérios de êxito</td>
-<td>Após a inclusão do fornecedor os dados devem estar exatamente como o usuário inseriu, quando é feita alguma alteração os dados deverão ser atualizados. Ao ser excluído o fornecedor antes cadastrado não deverá mais aparecer na aplicação</td>
+<td></td>
 </tr>
 
 
@@ -105,32 +105,32 @@ RF-008 - </br>
 <td>Caso de teste
 	
 </td>
-<td>CT-03 - FeedBack da inclusão, atualização ou exclusão de produtos e fornecedores
+<td>CT-03 - 
 </td>
 </tr>
 
 <tr>
 <td>Requisitos </br>
   Associados</td>
-<td>RF-003 - O Sistema deve permitir Criar Visualizar Atualizar e Deletar Produtos. </br>
+<td>RF-003 -  </br>
   
 </td>
 </tr>
 
 <tr>
 <td>Objetivo do Teste</td>
-<td>Verificar a resposta do site ao manipular fornecedores</td>
+<td></td>
 </tr>
 
 <tr>
 <td>Passos</td>
-<td>1 - Acessar a aplicação.</br>
-2 - Incluir um novo produto .</br>
-3 - Editar o cadastro do produto. </br>
-4 - Excluir produto. </br>
+<td>1 - </br>
+2 - </br>
+3 -  </br>
+4 -  </br>
 </tr>
 
 <tr>
 <td>Critérios de êxito</td>
-<td>Após a inclusão do produto os dados devem estar exatamente como o usuário inseriu, quando é feita alguma alteração os dados deverão ser atualizados. Ao ser excluído o produto antes cadastrado não deverá mais aparecer na aplicação</td>
+<td></td>
 </tr>
