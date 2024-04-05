@@ -22,10 +22,73 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Diagramas d
 
 ## Wireframes
 
-![Exemplo de Wireframe](img/wireframe-example.png)
+**Cliente**
+**Home Page**
 
-São protótipos usados em design de interface para sugerir a estrutura de um site web e seu relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante do layout de elementos fundamentais na interface.
- 
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-fitness-app/assets/129282137/39fd9979-21f5-4f6f-a149-2a9c5dc40448)
+
+**Cadastro**
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-fitness-app/assets/129282137/d668ecb8-b7e6-45c5-a9ef-47dc4ebb0868)
+
+**Login**
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-fitness-app/assets/129282137/2d172313-f95b-4307-a238-903310b53596)
+
+**Esqueceu sua senha?**
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-fitness-app/assets/129282137/8d4bba6a-3569-45b2-b8de-46b3ba1322f0)
+
+
+**Pergunta 1**
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-fitness-app/assets/129282137/abad037d-1e70-4c55-ad48-3bb828fbbe8d)
+
+**Pergunta 2**
+
+ ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-fitness-app/assets/129282137/012b056a-1983-4fb7-be01-ebcbc5248ed3)
+
+ **Treinos**
+
+ ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-fitness-app/assets/129282137/f6f242dd-2f2c-4a15-aff4-5a077a925f03)
+
+ **Verifique o seu treino**
+
+ ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-fitness-app/assets/129282137/9167a45d-4dc6-4e3a-86d7-bf828f76d5b5)
+
+**Criar o seu treino**
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-fitness-app/assets/129282137/c1fcd0a8-c0af-4694-9d2d-b9ef5588c06e)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-fitness-app/assets/129282137/6eb39aef-b4ee-4a02-b78c-9a7f82ea4e2d)
+
+**Registro**
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-fitness-app/assets/129282137/0b95788d-c1e1-4d06-9e27-fcc34070fa32)
+
+**Mais**
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-fitness-app/assets/129282137/58d68418-c9f5-4671-8416-d9844c3ebb5a)
+
+**Usuário**
+
+**Selecionar aluno para alteração ou cadastro de treino**
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-fitness-app/assets/129282137/c431df8a-a929-4f37-8dc9-fac052374886)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-fitness-app/assets/129282137/27c61fd6-ff6e-4743-889d-11c5d083e1fe)
+
+
+**Exercicios**
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-fitness-app/assets/129282137/fd5e74e5-8a57-4ca1-a1ff-e38a2bca9bd0)
+
+**Mais**
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-fitness-app/assets/129282137/397f0a45-50f1-49df-bbc1-912e6ecda13f)
+
+**Alterações Cadastrais**
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-fitness-app/assets/129282137/0d2d2af4-f624-4be5-a048-a3e1968a1a56)
+
 > **Links Úteis**:
 > - [Protótipos vs Wireframes](https://www.nngroup.com/videos/prototypes-vs-wireframes-ux-projects/)
 > - [Ferramentas de Wireframes](https://rockcontent.com/blog/wireframes/)
