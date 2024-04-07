@@ -8,11 +8,11 @@ Nesta seção, você encontrará uma descrição detalhada das telas desenvolvid
 
 Logo de início ao entrar no site o usuário é direcionado a home page, podendo escolher entre iniciar onde será criada uma conta ou a tela de login, caso tenha sido cadastrado basta informar o e-mail e a senha. Contudo, caso ainda não tenha cadastro, o funcionário irá criar um novo usuário.
 <br>
-<img src="homepage.jpg" alt="Tela inicial" title="Tela inicial" height="400"/>
+<img src="img/homepage.jpg" alt="Tela inicial" title="Tela inicial" height="400"/>
 <center>Figura 1 - Tela inicial.</center>
-<img src="login.jpg" alt="Login na plataforma" title="Login na plataforma" height="400"/>
+<img src="img/login.jpg" alt="Login na plataforma" title="Login na plataforma" height="400"/>
 <center>Figura 2 - Login na plataforma.</center>
-<img src="cadastro.jpg" alt="Cadastro na plataforma" title="Cadastro na plataforma" height="400"/>
+<img src="img/cadastro.jpg" alt="Cadastro na plataforma" title="Cadastro na plataforma" height="400"/>
 <center>Figura 3 - Cadastro na plataforma.</center>
 <br><br>
 
