@@ -7,6 +7,7 @@ Nesta seção, você encontrará uma descrição detalhada das telas desenvolvid
 <h3>Cadastro/Login na plataforma (RF-01)</h3>
 
 Logo de início ao entrar no site o usuário é direcionado a home page, podendo escolher entre iniciar onde será criada uma conta ou a tela de login, caso tenha sido cadastrado basta informar o e-mail e a senha. Contudo, caso ainda não tenha cadastro, o funcionário irá criar um novo usuário.
+<br>
 <img src="homepage.jpg" alt="Login" title="Login" height="400"/>
 <center>Figura 1 - Tela inicial.</center>
 <img src="login.jpg" alt="Login" title="Login" height="400"/>
