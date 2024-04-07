@@ -21,8 +21,8 @@ O Modelo ER representa através de um diagrama como as entidades (coisas, objeto
 ## Esquema Relacional
 
 O Esquema Relacional corresponde à representação dos dados em tabelas juntamente com as restrições de integridade e chave primária.
- 
-[Diagrama Banco de Dados ADS.pdf](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-fitness-app/files/14898938/Diagrama.Banco.de.Dados.ADS.pdf)
+
+![Diagrama Banco de Dados ADS](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-fitness-app/assets/81605100/8a4ec775-9b35-458c-82bb-6ce8bd9fbf8f)
 
 ## Modelo Físico
 
