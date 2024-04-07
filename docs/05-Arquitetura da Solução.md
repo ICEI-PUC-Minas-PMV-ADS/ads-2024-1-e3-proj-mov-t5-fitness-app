@@ -28,6 +28,8 @@ O Esquema Relacional corresponde à representação dos dados em tabelas juntame
 
 Entregar um arquivo banco.sql contendo os scripts de criação das tabelas do banco de dados. Este arquivo deverá ser incluído dentro da pasta src\bd.
 
+![Meu primeiro documento (2)](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-fitness-app/assets/81605100/0b364410-59ec-47ca-9d66-14981cfb32d7)
+
 ## Tecnologias Utilizadas
 
 As tecnologias utilizadas na aplicação serão: 
