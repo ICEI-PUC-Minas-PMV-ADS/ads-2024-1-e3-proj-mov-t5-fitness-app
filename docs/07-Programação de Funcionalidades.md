@@ -82,7 +82,7 @@ Requisitos atendidos:
 
 Quando um novo aluno decide se matricular, o funcionário pode registrar a matrícula do aluno na tela de matrículas. O sistema gera um número de matrícula e registra os dados do aluno.
 
-<img src="img/registro_matricula.jpg" alt="Registro de Matrícula" title="Registro de Matrícula" height="400"/>
+<img src="img/registro_matricula.jpeg" alt="Registro de Matrícula" title="Registro de Matrícula" height="400"/>
 <center>Figura 11 - Tela de registro de matrícula.</center>
 <br><br>
 
@@ -93,7 +93,7 @@ Requisitos atendidos:
 
 A tela de configurações permite que o aluno configure o local de treino, o nível de condicionamento físico, a frequência semanal e selecione a meta de treino.
 
-<img src="img/configuracoes.jpg" alt="Configurações" title="Configurações" height="400"/>
+<img src="img/configuracoes.jpeg" alt="Configurações" title="Configurações" height="400"/>
 <center>Figura 12 - Tela de configurações.</center>
 <br><br>
 
