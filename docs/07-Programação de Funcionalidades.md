@@ -8,11 +8,11 @@ Nesta seção, você encontrará uma descrição detalhada das telas desenvolvid
 
 Logo de início ao entrar no site o usuário é direcionado a home page, podendo escolher entre iniciar onde será criada uma conta ou a tela de login, caso tenha sido cadastrado basta informar o e-mail e a senha. Contudo, caso ainda não tenha cadastro, o funcionário irá criar um novo usuário.
 <br>
-<img src="img/homepage.jpg" alt="Tela inicial" title="Tela inicial" height="400"/>
+<img src="img/homepage.jpeg" alt="Tela inicial" title="Tela inicial" height="400"/>
 <center>Figura 1 - Tela inicial.</center>
-<img src="img/login.jpg" alt="Login na plataforma" title="Login na plataforma" height="400"/>
+<img src="img/login.jpeg" alt="Login na plataforma" title="Login na plataforma" height="400"/>
 <center>Figura 2 - Login na plataforma.</center>
-<img src="img/cadastro.jpg" alt="Cadastro na plataforma" title="Cadastro na plataforma" height="400"/>
+<img src="img/cadastro.jpeg" alt="Cadastro na plataforma" title="Cadastro na plataforma" height="400"/>
 <center>Figura 3 - Cadastro na plataforma.</center>
 <br><br>
 
@@ -23,7 +23,7 @@ Requisitos atendidos:
 
 Se o usuário esquecer a senha, ele pode solicitar a recuperação da senha na tela de login. Um e-mail será enviado para o endereço de e-mail registrado com instruções para redefinir a senha.
 
-<img src="img/recuperar_senha.jpg" alt="Recuperar Senha" title="Recuperar Senha" height="400"/>
+<img src="img/recuperar_senha.jpeg" alt="Recuperar Senha" title="Recuperar Senha" height="400"/>
 <center>Figura 4 - Tela para recuperação de senha.</center>
 <br><br>
 
@@ -34,7 +34,7 @@ Requisitos atendidos:
 
 A tela de perfil do aluno permite que o aluno consulte e altere seus dados pessoais. O aluno pode visualizar seus dados, mas não pode editar ou excluir seu perfil.
 
-<img src="img/perfil_aluno.jpg" alt="Perfil do Aluno" title="Perfil do Aluno" height="400"/>
+<img src="img/perfil_aluno.jpeg" alt="Perfil do Aluno" title="Perfil do Aluno" height="400"/>
 <center>Figura 5 - Tela de perfil do aluno.</center>
 <br><br>
 
@@ -45,7 +45,7 @@ Requisitos atendidos:
 
 A tela do treinador permite que o treinador altere os exercícios dos alunos. O treinador pode visualizar os exercícios dos alunos, mas não pode editar ou excluir os exercícios.
 
-<img src="img/alteracao_exercicio.jpg" alt="Alteração de Exercício" title="Alteração de Exercício" height="400"/>
+<img src="img/alteracao_exercicio.jpeg" alt="Alteração de Exercício" title="Alteração de Exercício" height="400"/>
 <center>Figura 6 - Tela de alteração de exercício.</center>
 <br><br>
 
@@ -56,7 +56,7 @@ Requisitos atendidos:
 
 A tela de consulta de exercícios permite que o treinador consulte os exercícios dos alunos. O treinador pode visualizar os exercícios dos alunos, mas não pode editar ou excluir os exercícios.
 
-<img src="img/consulta_exercicios.jpg" alt="Consulta de Exercícios" title="Consulta de Exercícios" height="400"/>
+<img src="img/consulta_exercicios.jpeg" alt="Consulta de Exercícios" title="Consulta de Exercícios" height="400"/>
 <center>Figura 7 - Tela de consulta de exercícios.</center>
 <br><br>
 
@@ -67,11 +67,11 @@ Requisitos atendidos:
 
 A tela de criação de plano de treino permite que o treinador crie um plano de treino para os alunos com base nos grupos musculares. Além disso, logo após o cadastro, o sistema deve perguntar ao aluno sobre seu condicionamento físico e a frequência semanal de treinos. Essas informações serão usadas para criar um plano de treino inicial.
 
-<img src="img/criacao_plano_treino.jpg" alt="Criação de Plano de Treino" title="Criação de Plano de Treino" height="400"/>
+<img src="img/criacao_plano_treino.jpeg" alt="Criação de Plano de Treino" title="Criação de Plano de Treino" height="400"/>
 <center>Figura 8 - Tela de criação de plano de treino.</center>
-<img src="img/pergunta1.jpg" alt="Perguntas do condicionamento do aluno" title="Pergunta de condicionamento físico" height="400"/>
+<img src="img/pergunta1.jpeg" alt="Perguntas do condicionamento do aluno" title="Pergunta de condicionamento físico" height="400"/>
 <center>Figura 9 - Tela de pergunta sobre condicionamento físico.</center>
-<img src="img/pergunta2.jpg" alt="Perguntas de frequência semanal" title="Pergunta de frequência semanal" height="400"/>
+<img src="img/pergunta2.jpeg" alt="Perguntas de frequência semanal" title="Pergunta de frequência semanal" height="400"/>
 <center>Figura 10 - Tela de pergunta sobre frequência semanal.</center>
 <br><br>
 
