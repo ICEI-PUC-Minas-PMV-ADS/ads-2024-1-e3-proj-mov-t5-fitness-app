@@ -91,7 +91,7 @@ Requisitos atendidos:
 
 <h3>Configurações (RF-08)</h3>
 
-A tela de configurações permite que o aluno configure o local de treino, o nível de condicionamento físico e selecione o exercício que deseja fazer do plano de treino.
+A tela de configurações permite que o aluno configure o local de treino, o nível de condicionamento físico, a frequência semanal e selecione a meta de treino.
 
 <img src="img/configuracoes.jpg" alt="Configurações" title="Configurações" height="400"/>
 <center>Figura 12 - Tela de configurações.</center>
