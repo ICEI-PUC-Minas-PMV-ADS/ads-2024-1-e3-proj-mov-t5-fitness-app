@@ -27,6 +27,7 @@ interativo, acesse o [Ambiente Figma do projeto](https://www.figma.com/file/nbfl
 <br><br>
 <h2>Tela do Cliente</h2>
 <br>
+
 **Home Page**
 
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-fitness-app/assets/129282137/39fd9979-21f5-4f6f-a149-2a9c5dc40448)
@@ -75,6 +76,7 @@ interativo, acesse o [Ambiente Figma do projeto](https://www.figma.com/file/nbfl
 <br><br>
 <h2>Tela do Usuário</h2>
 <br>
+
 **Selecionar aluno para alteração ou cadastro de treino**
 
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-fitness-app/assets/129282137/c431df8a-a929-4f37-8dc9-fac052374886)
