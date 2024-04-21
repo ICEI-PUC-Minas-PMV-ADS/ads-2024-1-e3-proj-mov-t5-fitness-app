@@ -21,7 +21,9 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Diagramas d
 > - [Fluxograma online: seis sites para fazer gráfico sem instalar nada | Produtividade | TechTudo](https://www.techtudo.com.br/listas/2019/03/fluxograma-online-seis-sites-para-fazer-grafico-sem-instalar-nada.ghtml)
 
 ## Wireframes
-
+Conforme o diagrama de fluxo do projeto, apresentado no item anterior, as telas do sistema 
+são apresentadas em detalhes nos itens que se seguem. Para visualizar o wireframe 
+interativo, acesse o > - [Ambiente Figma do projeto](https://www.figma.com/file/nbflwFG3Nav2u20pyj1AdP/Untitled?type=design&node-id=0-1&mode=design)
 **Cliente**
 **Home Page**
 
