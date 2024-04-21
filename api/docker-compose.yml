@@ -1,0 +1,22 @@
+version: "3.8"
+
+services:
+  api:
+    container_name: dataopera-clean-architecture-api
+    image: dataopera-clean-architecture-api
+    restart: always
+    build:
+      context: .
+      dockerfile: Dockerfile
+    working_dir: /usr/src/app
+    command: >
+      /bin/sh -c "
+        npm run start:dev
+      "
+    env_file: .env
+    init: true
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules
+    ports:
+      - '${PORT}:${PORT}'

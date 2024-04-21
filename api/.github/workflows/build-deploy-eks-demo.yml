@@ -1,0 +1,78 @@
+on:
+  push:
+    branches: [ "demo" ]
+      
+name: Build And Deploy Demo
+jobs:
+  build_and_push:
+    environment: demo
+    name: Build Docker Image
+    runs-on: ubuntu-latest
+    steps:  
+        - name: Checkout
+          uses: actions/checkout@v3
+ 
+        - name: Setup AWS ECR Details
+          uses: aws-actions/configure-aws-credentials@v4
+          with:
+            aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+            aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+            aws-region: ${{ secrets.AWS_REGION }}     
+ 
+        - name: Login to Amazon ECR
+          id: login-ecr
+          uses: aws-actions/amazon-ecr-login@v2
+                  
+        - name: Generate Npmrc File
+          run: |
+            echo "@dataopera:registry=https://npm.pkg.github.com" >> .npmrc
+            echo "//npm.pkg.github.com/:_authToken=${{ secrets.NPM_TOKEN }}" >> .npmrc
+            
+        - name: Generate Env File
+          run: |
+            echo "NODE_ENV=${{ vars.NODE_ENV }}" >> .env
+            echo "SECRET_KEY=${{ secrets.SECRET_KEY }}" >> .env
+            echo "PORT=${{ vars.PORT }}" >> .env
+            echo "DATABASE_URL=${{ vars.DATABASE_URL }}" >> .env
+            echo "MONGO_USERNAME=${{ secrets.MONGO_USERNAME }}" >> .env
+            echo "MONGO_PASSWORD=${{ secrets.MONGO_PASSWORD }}" >> .env
+            echo "MONGO_HOST=${{ vars.MONGO_HOST }}" >> .env
+            echo "MONGO_PORT=${{ vars.MONGO_PORT }}" >> .env
+            echo "MONGO_DATABASENAME=${{ vars.MONGO_DATABASENAME }}" >> .env
+            echo "ACCESS_TOKEN_EXPIRES_IN=${{ secrets.ACCESS_TOKEN_EXPIRES_IN }}" >> .env
+            echo "INACTIVITY_LIMIT_TOKEN_REFRESH=${{ secrets.INACTIVITY_LIMIT_TOKEN_REFRESH }}" >> .env
+            echo "REDIS_HOST=${{ vars.REDIS_HOST }}" >> .env
+            echo "REDIS_PORT=${{ vars.REDIS_PORT }}" >> .env
+            echo "REDIS_PASSWORD=${{ secrets.REDIS_PASSWORD }}" >> .env
+            echo "API_DATATUNE_URL=${{ vars.API_DATATUNE_URL }}" >> .env
+            echo "API_DATAMEA_URL=${{ vars.API_DATAMEA_URL }}" >> .env
+            echo "CLIENT_ID=${{ vars.CLIENT_ID }}" >> .env
+            echo "CLIENT_SECRET=${{ vars.CLIENT_SECRET }}" >> .env
+            echo "S3_SECRET_ACCESS_KEY=${{ secrets.S3_SECRET_ACCESS_KEY }}" >> .env
+            echo "S3_ACCESS_KEY_ID=${{ secrets.S3_ACCESS_KEY_ID }}" >> .env
+            echo "DATABASE_URL_DATAADMIN=${{ vars.DATABASE_URL_DATAADMIN }}" >> .env
+          
+        - name: Build and push the tagged docker image to Amazon ECR
+          run: |
+            docker build -t ${{ secrets.ECR_REGISTRY }}/$GITHUB_REPOSITORY-$GITHUB_REF_NAME:$GITHUB_RUN_NUMBER -f Dockerfile .
+            docker push ${{ secrets.ECR_REGISTRY }}/$GITHUB_REPOSITORY-$GITHUB_REF_NAME:$GITHUB_RUN_NUMBER
+            sed -i "s|\\\$GITHUB_REPOSITORY|${GITHUB_REPOSITORY##*/}|g" k8s/deployment.yaml
+            sed -i "s/\$GITHUB_ENVIRONMENT/$GITHUB_REF_NAME/g" k8s/deployment.yaml
+            sed -i "s|\\\$ECR_REGISTRY|${{ secrets.ECR_REGISTRY }}|g" k8s/deployment.yaml
+            sed -i "s/($GITHUB_REF_NAME)/$GITHUB_RUN_NUMBER/g" k8s/deployment.yaml
+            cat k8s/deployment.yaml
+            sed -i "s|\\\$GITHUB_REPOSITORY|${GITHUB_REPOSITORY##*/}|g" k8s/service.yaml
+            sed -i "s/\$GITHUB_ENVIRONMENT/$GITHUB_REF_NAME/g" k8s/service.yaml
+            cat k8s/service.yaml
+              
+        - name: Deploy
+          uses: cancue/eks-action@v0.0.2
+          env:
+            aws_access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+            aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }} 
+            aws_region: ${{ secrets.AWS_REGION }}
+            cluster_name: ${{ secrets.EKS_CLUSTER_NAME }}
+          with:
+            args: |
+                kubectl apply -f k8s/deployment.yaml
+                kubectl apply -f k8s/service.yaml

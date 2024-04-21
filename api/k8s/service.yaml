@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: $GITHUB_REPOSITORY-$GITHUB_ENVIRONMENT
+  namespace: $GITHUB_ENVIRONMENT
+  labels:
+    name: $GITHUB_REPOSITORY-$GITHUB_ENVIRONMENT
+spec:
+  type: NodePort
+  ports:
+    - port: 3000
+      name: http
+  selector:
+    name: $GITHUB_REPOSITORY-$GITHUB_ENVIRONMENT

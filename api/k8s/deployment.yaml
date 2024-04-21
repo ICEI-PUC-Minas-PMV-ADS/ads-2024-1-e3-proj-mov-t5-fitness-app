@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+ name: $GITHUB_REPOSITORY-$GITHUB_ENVIRONMENT
+ namespace: $GITHUB_ENVIRONMENT
+spec:
+  selector:
+    matchLabels:
+      name: $GITHUB_REPOSITORY-$GITHUB_ENVIRONMENT 
+  template:
+    metadata:
+      labels:
+        name: $GITHUB_REPOSITORY-$GITHUB_ENVIRONMENT
+      name: $GITHUB_REPOSITORY-$GITHUB_ENVIRONMENT
+    spec:
+      containers:
+        - name: $GITHUB_REPOSITORY-$GITHUB_ENVIRONMENT
+          image: $ECR_REGISTRY/dataopera/$GITHUB_REPOSITORY-$GITHUB_ENVIRONMENT:($GITHUB_ENVIRONMENT)
