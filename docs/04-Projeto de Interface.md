@@ -39,41 +39,59 @@ Essa estrutura simplificada facilita a navegação do usuário e torna a experi�
 **Tela - Home Page**
 Esta é a primeira tela que o usuário vê ao abrir o aplicativo, possui o botão “Iniciar”. Ao clicar em “Iniciar”, o usuário é direcionado para a tela de Login. Se o usuário esqueceu a senha, há um link para redefini-la. Se o usuário não for encontrado, ele será direcionado para a tela de Cadastro.
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-fitness-app/assets/129282137/39fd9979-21f5-4f6f-a149-2a9c5dc40448)
+<center>Figura 1 - Tela Home Page</center>
 
 <br><br>
 **Cadastro**
 Nesta tela, os novos usuários podem se registrar no aplicativo, fornecendo as informações necessárias como nome, email, senha. Após o preenchimento dos dados, o usuário pode prosseguir para as próximas etapas do processo de cadastro.
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-fitness-app/assets/129282137/d668ecb8-b7e6-45c5-a9ef-47dc4ebb0868)
+<center>Figura 2 - Tela de Cadastro</center>
+
 <br><br>
 **Tela - Login**
 Os usuários registrados podem entrar no aplicativo usando suas credenciais. Se as credenciais estiverem corretas, o usuário será direcionado para a tela inicial do aplicativo.
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-fitness-app/assets/129282137/2d172313-f95b-4307-a238-903310b53596)
+<center>Figura 3 - Tela de Login</center>
+
 <br><br>
 **Tela - Esqueceu sua senha?**
 Se um usuário esquecer sua senha, ele pode redefini-la através desta tela. O usuário precisa fornecer o email associado à conta e seguir as instruções enviadas para esse email para redefinir a senha.
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-fitness-app/assets/129282137/8d4bba6a-3569-45b2-b8de-46b3ba1322f0)
+<center>Figura 4 - Tela Esqueceu sua senha?</center>
 
 <br><br>
 **Tela - Pergunta 1**
 Esta tela é projetada para entender o nível de condicionamento físico do usuário. Ela apresenta uma pergunta direta sobre o nível de condicionamento físico do usuário, com opções variando de iniciante a avançado. O usuário pode selecionar a opção que melhor descreve seu nível atual de condicionamento físico. Essas informações ajudam o aplicativo a personalizar os treinos de acordo com a capacidade do usuário.
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-fitness-app/assets/129282137/abad037d-1e70-4c55-ad48-3bb828fbbe8d)
+<center>Figura 5 - Tela Pergunta 1</center>
+
 <br><br>
 **Tela - Pergunta 2**
 Esta tela busca entender a disponibilidade do usuário para se exercitar durante a semana. Ela pergunta ao usuário quantos dias por semana ele planeja se exercitar. O usuário pode selecionar os dias da semana que pretende dedicar ao treino. Essas informações são importantes para criar um plano de treino equilibrado e gerenciável para o usuário.  
  ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-fitness-app/assets/129282137/012b056a-1983-4fb7-be01-ebcbc5248ed3)
+ <center>Figura 6 - Tela Pergunta 2</center>
+ 
 <br><br>
  **Tela - Treinos**
 Esta tela apresenta os treinos disponíveis para o usuário. Cada treino é representado por uma cartão que mostra informações básicas sobre o treino. O usuário pode selecionar um treino para ver mais detalhes.
  ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-fitness-app/assets/129282137/f6f242dd-2f2c-4a15-aff4-5a077a925f03)
+ <center>Figura 7 - Tela de Treinos</center>
+ 
 <br><br>
  **Tela - Verifique o seu treino**
 Aqui, o usuário pode verificar os detalhes do seu treino. A tela mostra informações como o nome do treino, a descrição, os exercícios incluídos, etc.
  ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-fitness-app/assets/129282137/9167a45d-4dc6-4e3a-86d7-bf828f76d5b5)
+ <center>Figura 8 - Tela Verifique o seu treino</center>
+  
 <br><br>
 **Tela - Criar o seu treino**
 Esta tela permite ao usuário criar um treino personalizado. O usuário pode adicionar exercícios de uma lista disponível e definir detalhes como o número de séries, repetições e descanso entre as séries.
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-fitness-app/assets/129282137/c1fcd0a8-c0af-4694-9d2d-b9ef5588c06e)
+<center>Figura 9 - Tela Criar o seu treino</center>
+
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-fitness-app/assets/129282137/6eb39aef-b4ee-4a02-b78c-9a7f82ea4e2d)
+<center>Figura 9 - Tela Criar o seu treino</center>
+
 <br><br>
 **Tela - Registro**
 Esta tela informa que o treino foi registrado e possui um botão “Vá para os treinos” que direciona a tela de Treinos.
