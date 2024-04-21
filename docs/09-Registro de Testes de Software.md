@@ -10,13 +10,32 @@ UsabilityHub
 Hotjar
 Resultados dos Testes:
 
-Caso de Teste	Resultado	Observações
-CT-01 - Teste de usabilidade da interface do usuário	Aprovado	A maioria dos usuários conseguiu realizar as tarefas com sucesso.
-CT-02 - Teste de usabilidade da API	Aprovado	A API foi considerada fácil de usar pela maioria dos usuários.
+<table>
+<tr>
+<td>Caso de Teste	Resultado	Observações
+	
+</td>
+<td>CT-01 - Teste de usabilidade da interface do usuário	Aprovado	A maioria dos usuários conseguiu realizar as tarefas com sucesso.
+  <br>
+     CT-02 - Teste de usabilidade da API	Aprovado	A API foi considerada fácil de usar pela maioria dos usuários.
+</td>
+</tr>
+
+<tr>
+<td>
+
+<tr>
+<td>
+  
 Pontos Fortes:
 
+</td>
+<td>
 A interface do usuário é intuitiva e fácil de usar.
 A API está bem documentada e fácil de usar.
+
+</td>
+</tr>
 Pontos Fracos:
 
 Alguns usuários tiveram dificuldade em encontrar algumas funcionalidades.
