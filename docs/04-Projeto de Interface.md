@@ -110,10 +110,12 @@ Esta tela informa que o treino foi registrado e possui um botão “Vá para os 
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-fitness-app/assets/129282137/0b95788d-c1e1-4d06-9e27-fcc34070fa32)
 <center>Figura 12 - Tela de Registro</center>
 <br><br>
+
 **Tela - Mais**
 <br>
 Esta tela oferece acesso a configuraçes adicionais e informações sobre o aplicativo. O usuário pode alterar o local da academia, o nível de condicionamento físico, a meta de treino e os dias de treino
 <br>
+
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-fitness-app/assets/129282137/58d68418-c9f5-4671-8416-d9844c3ebb5a)
  <center>Figura 13 - Tela Mais</center>
 <br><br>
