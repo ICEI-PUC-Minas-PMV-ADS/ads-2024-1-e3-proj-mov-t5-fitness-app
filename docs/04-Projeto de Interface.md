@@ -25,13 +25,14 @@ Conforme o diagrama de fluxo do projeto, apresentado no item anterior, as telas 
 são apresentadas em detalhes nos itens que se seguem. Para visualizar o wireframe 
 interativo, acesse o [Ambiente Figma do projeto](https://www.figma.com/file/nbflwFG3Nav2u20pyj1AdP/Untitled?type=design&node-id=0-1&mode=design)
 <br><br>
+
 <h2>Tela do Cliente</h2>
 <br>
 
 **Tela - Home Page**
-<div  align="center">
+
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-fitness-app/assets/129282137/39fd9979-21f5-4f6f-a149-2a9c5dc40448)
-</div>
+
 <br><br>
 **Cadastro**
 
@@ -75,6 +76,7 @@ interativo, acesse o [Ambiente Figma do projeto](https://www.figma.com/file/nbfl
 
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-fitness-app/assets/129282137/58d68418-c9f5-4671-8416-d9844c3ebb5a)
 <br><br>
+
 <h2>Tela do Usuário</h2>
 <br>
 
