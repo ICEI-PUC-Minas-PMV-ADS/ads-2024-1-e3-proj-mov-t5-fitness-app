@@ -33,6 +33,7 @@ Pontos Fortes:
 </td>
 <td>
 A interface do usuário é intuitiva e fácil de usar.
+	 <br>
 A API está bem documentada e fácil de usar.
 
 </td>
@@ -45,6 +46,7 @@ Pontos Fracos:
 <td> 
 	
 Alguns usuários tiveram dificuldade em encontrar algumas funcionalidades.
+ <br>
 A API não possui um sistema de autenticação e autorização.
 
 </td>
@@ -56,9 +58,9 @@ Melhorias para Próximas Iterações:
 </td>
 <td>
 	
-Melhorar a visibilidade de algumas funcionalidades.
-Implementar um sistema de autenticação e autorização para a API.
-Adicionar mais funcionalidades ao sistema, como a capacidade de criar e gerenciar treinos.
+Melhorar a visibilidade de algumas funcionalidades.  <br>
+Implementar um sistema de autenticação e autorização para a API.  <br>
+Adicionar mais funcionalidades ao sistema, como a capacidade de criar e gerenciar treinos.  <br>
 </td>
 </tr>
 
@@ -69,6 +71,7 @@ Falhas Detectadas:
 <td>
 	
 Alguns usuários tiveram dificuldade em encontrar o botão de login.
+ <br>
 A API não possui um sistema de gerenciamento de erros.
 </td>
 </tr>
@@ -79,6 +82,7 @@ Melhorias Geradas:
 <td>
 	
 O botão de login foi movido para um local mais visível.
+ <br>
 A equipe está trabalhando na implementação de um sistema de gerenciamento de erros para a API.
 </td>
 </tr>
