@@ -147,6 +147,7 @@ Aqui, o treinador pode ver e gerenciar os exercícios disponíveis. Cada exercí
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-fitness-app/assets/129282137/fd5e74e5-8a57-4ca1-a1ff-e38a2bca9bd0)
 <center>Figura 15 - Tela de Exercícios</center>
 <br><br>
+
 **Tela - Mais**
 <br>
 Esta tela oferece acesso a configurações adicionais e informações sobre o aplicativo. O treinador pode ver informações sobre colaboradores e alunos.
@@ -155,6 +156,7 @@ Esta tela oferece acesso a configurações adicionais e informações sobre o ap
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-fitness-app/assets/129282137/397f0a45-50f1-49df-bbc1-912e6ecda13f)
 <center>Figura 16 - Tela Mais do Usuário</center>
 <br><br>
+
 **Tela - Alterações Cadastrais**
 <br>
 Esta tela ao usuário alterar seus dados como cargo, telefone, email e nome.
