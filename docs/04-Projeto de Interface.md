@@ -37,18 +37,21 @@ Essa estrutura simplificada facilita a navegação do usuário e torna a experi�
 <br>
 
 **Tela - Home Page**
+<br>
 Esta é a primeira tela que o usuário vê ao abrir o aplicativo, possui o botão “Iniciar”. Ao clicar em “Iniciar”, o usuário é direcionado para a tela de Login. Se o usuário esqueceu a senha, há um link para redefini-la. Se o usuário não for encontrado, ele será direcionado para a tela de Cadastro.
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-fitness-app/assets/129282137/39fd9979-21f5-4f6f-a149-2a9c5dc40448)
 <center>Figura 1 - Tela Home Page</center>
 
 <br><br>
 **Cadastro**
+<br>
 Nesta tela, os novos usuários podem se registrar no aplicativo, fornecendo as informações necessárias como nome, email, senha. Após o preenchimento dos dados, o usuário pode prosseguir para as próximas etapas do processo de cadastro.
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-fitness-app/assets/129282137/d668ecb8-b7e6-45c5-a9ef-47dc4ebb0868)
 <center>Figura 2 - Tela de Cadastro</center>
 
 <br><br>
 **Tela - Login**
+<br>
 Os usuários registrados podem entrar no aplicativo usando suas credenciais. Se as credenciais estiverem corretas, o usuário será direcionado para a tela inicial do aplicativo.
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-fitness-app/assets/129282137/2d172313-f95b-4307-a238-903310b53596)
 <center>Figura 3 - Tela de Login</center>
@@ -90,7 +93,7 @@ Esta tela permite ao usuário criar um treino personalizado. O usuário pode adi
 <center>Figura 9 - Tela Criar o seu treino</center>
 
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-fitness-app/assets/129282137/6eb39aef-b4ee-4a02-b78c-9a7f82ea4e2d)
-<center>Figura 9 - Tela Criar o seu treino</center>
+<center>Figura 10 - Tela Criar o seu treino</center>
 
 <br><br>
 **Tela - Registro**
