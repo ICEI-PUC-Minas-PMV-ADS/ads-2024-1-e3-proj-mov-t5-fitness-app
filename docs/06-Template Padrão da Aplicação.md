@@ -7,7 +7,7 @@ elaborado anteriormente, conforme Figura .
  
  <center> Figura  - Template padrão do aplicativo de academia </center>
 <br><br>
-O template criado está disponível no site [http://github.com/……](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-fitness-app) e é composto pelos seguintes layouts: <br><br>
+O template criado está disponível no site [http://github.com/…](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-fitness-app) e é composto pelos seguintes layouts: <br><br>
 ● Tela principal. <br>
 ● Modal de Mensagens (Pergunta 1 e Pergunta 2). <br>
 ● Tela de Treinos Treinos. <br>
