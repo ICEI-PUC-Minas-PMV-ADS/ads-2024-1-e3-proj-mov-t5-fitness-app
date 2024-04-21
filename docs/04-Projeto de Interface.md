@@ -116,12 +116,14 @@ Esta tela permite ao usuário criar um treino personalizado. O usuário pode adi
 Esta tela informa que o treino foi registrado e possui um botão “Vá para os treinos” que direciona a tela de Treinos.
 <br>
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-fitness-app/assets/129282137/0b95788d-c1e1-4d06-9e27-fcc34070fa32)
+<center>Figura 11 - Tela de Registro</center>
 <br><br>
 **Tela - Mais**
 <br>
 Esta tela oferece acesso a configurações adicionais e informações sobre o aplicativo. O usuário pode alterar o local da academia, o nível de condicionamento físico, a meta de treino e os dias de treino
 <br>
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-fitness-app/assets/129282137/58d68418-c9f5-4671-8416-d9844c3ebb5a)
+ <center>Figura 12 - Tela Mais</center>
 <br><br>
 
 <h2>Tela do Usuário</h2>
@@ -132,7 +134,10 @@ Esta tela oferece acesso a configurações adicionais e informações sobre o ap
  Esta tela permite ao treinador selecionar um aluno para alterar ou criar um treino. O treinador pode selecionar um aluno de uma lista disponível.
  <br>
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-fitness-app/assets/129282137/c431df8a-a929-4f37-8dc9-fac052374886)
+<center>Figura 13 - Tela Selecionar aluno para alteração ou cadastro de treino - Selecionar Aluno</center>
+
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-fitness-app/assets/129282137/27c61fd6-ff6e-4743-889d-11c5d083e1fe)
+<center>Figura 14 - Tela Selecionar aluno para alteração ou cadastro de treino - Exercícios do Aluno</center>
 
 <br><br>
 **Tela - Exercicios**
@@ -140,18 +145,23 @@ Esta tela oferece acesso a configurações adicionais e informações sobre o ap
 Aqui, o treinador pode ver e gerenciar os exercícios disponíveis. Cada exercício é representado por um cartão que mostra informações básicas sobre o exercício. O treinador pode selecionar um exercício para ver mais detalhes.
 <br>
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-fitness-app/assets/129282137/fd5e74e5-8a57-4ca1-a1ff-e38a2bca9bd0)
+<center>Figura 15 - Tela de Exercícios</center>
 <br><br>
 **Tela - Mais**
 <br>
 Esta tela oferece acesso a configurações adicionais e informações sobre o aplicativo. O treinador pode ver informações sobre colaboradores e alunos.
 <br>
+
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-fitness-app/assets/129282137/397f0a45-50f1-49df-bbc1-912e6ecda13f)
+<center>Figura 16 - Tela Mais do Usuário</center>
 <br><br>
 **Tela - Alterações Cadastrais**
 <br>
 Esta tela ao usuário alterar seus dados como cargo, telefone, email e nome.
 <br>
+
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-fitness-app/assets/129282137/0d2d2af4-f624-4be5-a048-a3e1968a1a56)
+<center>Figura 17 - Tela Alterações Cadastrais</center>
 
 > **Links Úteis**:
 > - [Protótipos vs Wireframes](https://www.nngroup.com/videos/prototypes-vs-wireframes-ux-projects/)
