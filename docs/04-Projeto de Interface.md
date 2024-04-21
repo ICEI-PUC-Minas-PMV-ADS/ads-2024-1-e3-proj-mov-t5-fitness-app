@@ -8,8 +8,6 @@ Visão geral da interação do usuário pelas telas do sistema e protótipo inte
 
 O diagrama apresenta o estudo do fluxo de interação do usuário com o sistema interativo e  muitas vezes sem a necessidade do desenho do design das telas da interface. Isso permite que o design das interações seja bem planejado e gere impacto na qualidade no design do wireframe interativo que será desenvolvido logo em seguida.
 
-O diagrama de fluxo pode ser desenvolvido com “boxes” que possuem internamente a indicação dos principais elementos de interface - tais como menus e acessos - e funcionalidades, tais como editar, pesquisar, filtrar, configurar - e a conexão entre esses boxes a partir do processo de interação. Você pode ver mais explicações e exemplos https://www.lucidchart.com/blog/how-to-make-a-user-flow-diagram.
-
 ![Diagrama de Fluxo](img/diagramafluxo.jpg)
 
 As referências abaixo irão auxiliá-lo na geração do artefato “Diagramas de Fluxo”.
@@ -20,9 +18,9 @@ são apresentadas em detalhes nos itens que se seguem. Para visualizar o wirefra
 interativo, acesse o [Ambiente Figma do projeto](https://www.figma.com/file/nbflwFG3Nav2u20pyj1AdP/Untitled?type=design&node-id=0-1&mode=design)
 <br>
 As telas do sistema apresentam uma estrutura comum que é apresentada na Figura 7. Nesta 
-estrutura, existem 3 grandes blocos, descritos a seguir. São eles:<br>
+estrutura, existem 3 grandes blocos, descritos a seguir. São eles:<br><br>
 ● Menu Inferior - Este é o principal meio de navegação no aplicativo. Ele permite aos usuários alternar facilmente entre diferentes seções do aplicativo. Este menu é especialmente útil em dispositivos móveis, onde o espaço da tela é limitado.<br>
-● Conteúdo - apresenta o conteúdo da tela em questão;<br>
+● Conteúdo - apresenta o conteúdo da tela em questão;<br><br>
 Essa estrutura simplificada facilita a navegação do usuário e torna a experiência do usuário mais intuitiva e eficiente.
 
 <br><br>
