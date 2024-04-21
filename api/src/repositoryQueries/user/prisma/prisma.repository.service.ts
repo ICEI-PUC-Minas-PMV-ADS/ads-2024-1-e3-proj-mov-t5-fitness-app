@@ -5,6 +5,7 @@ import { IPaginationResponse } from 'src/shared/interfaces';
 import { IUserRepositoryQueries } from '..';
 
 import {
+    IAlreadyExistUserDto,
     ICreateUserDto,
     ICreateUserRes,
     IDeleteUserDto,
@@ -27,6 +28,8 @@ export class UserRepositoryPrismaService implements IUserRepositoryQueries {
             email: true,
             name: true,
             password: false,
+            userGroup: true,
+            userGroupId: true,
             createdAt: true,
             updatedAt: true,
         };
@@ -36,6 +39,7 @@ export class UserRepositoryPrismaService implements IUserRepositoryQueries {
         name,
         email,
         password,
+        userGroupId,
     }: ICreateUserDto): Promise<ICreateUserRes> {
         try {
             const newUser = await this.prisma.user.create({
@@ -43,6 +47,11 @@ export class UserRepositoryPrismaService implements IUserRepositoryQueries {
                     name,
                     email,
                     password,
+                    userGroup: {
+                        connect: {
+                            id: userGroupId,
+                        },
+                    },
                 },
                 select: this.selectedDataUserRes(),
             });
@@ -60,6 +69,7 @@ export class UserRepositoryPrismaService implements IUserRepositoryQueries {
         email,
         name,
         password,
+        userGroupId,
     }: IUpdateUserDto): Promise<IUpdateUserRes> {
         try {
             const updatedUser = await this.prisma.user.update({
@@ -67,6 +77,11 @@ export class UserRepositoryPrismaService implements IUserRepositoryQueries {
                     email,
                     name,
                     password,
+                    userGroup: {
+                        connect: {
+                            id: userGroupId,
+                        },
+                    },
                 },
                 where: {
                     id,
@@ -122,6 +137,7 @@ export class UserRepositoryPrismaService implements IUserRepositoryQueries {
 
             if (!users[0])
                 return {
+                    // @ts-ignore
                     data: users,
                 };
 
@@ -129,6 +145,7 @@ export class UserRepositoryPrismaService implements IUserRepositoryQueries {
                 total: _count,
                 skip: itemsToSkip,
                 take: itemsPerPage,
+                // @ts-ignore
                 data: users,
             });
         } catch (error) {
@@ -137,17 +154,55 @@ export class UserRepositoryPrismaService implements IUserRepositoryQueries {
         }
     }
 
-    async listOne({ id }: IListOneUserDto): Promise<IListOneUserRes> {
+    async listOne({
+        id,
+        email,
+        config = {
+            showPassword: false,
+        },
+    }: IListOneUserDto): Promise<IListOneUserRes> {
         try {
             const user = await this.prisma.user.findFirst({
                 where: {
-                    id,
+                    OR: [
+                        {
+                            id,
+                        },
+                        {
+                            email,
+                        },
+                    ],
                 },
-                select: this.selectedDataUserRes(),
+                select: {
+                    ...this.selectedDataUserRes(),
+                    password: config.showPassword,
+                },
             });
 
             if (!user) return user;
             else return user;
+        } catch (error) {
+            console.log(error);
+            throw new Error(error);
+        }
+    }
+
+    async alreadyExist({ email, id }: IAlreadyExistUserDto): Promise<boolean> {
+        try {
+            const userAlreadyExist = await this.prisma.user.findFirst({
+                where: {
+                    OR: [
+                        {
+                            id,
+                        },
+                        {
+                            email,
+                        },
+                    ],
+                },
+            });
+
+            return !!userAlreadyExist;
         } catch (error) {
             console.log(error);
             throw new Error(error);

@@ -15,13 +15,14 @@ export class UserCreateController {
     @Post('create')
     async create(
         @Body()
-        { email, name, password }: ICreateUserDto,
+        { email, name, password, userGroupId }: ICreateUserDto,
     ): IResponse<Promise<IResponseError | IResponseSuccess<ICreateUserRes>>> {
         try {
             const response = await this.userCreateService.create({
                 email,
                 name,
                 password,
+                userGroupId: Number(userGroupId),
             });
 
             if (response.isException()) {

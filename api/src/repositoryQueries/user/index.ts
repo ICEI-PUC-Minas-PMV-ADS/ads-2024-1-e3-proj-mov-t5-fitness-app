@@ -1,6 +1,7 @@
 import { IPaginationResponse } from 'src/shared/interfaces';
 
 import {
+    IAlreadyExistUserDto,
     ICreateUserDto,
     ICreateUserRes,
     IDeleteUserDto,
@@ -31,4 +32,6 @@ export interface IUserRepositoryQueries {
     }: IListUserDto): Promise<IPaginationResponse<IListUserRes>>;
 
     listOne({ id }: IListOneUserDto): Promise<IListOneUserRes>;
+
+    alreadyExist({ email }: IAlreadyExistUserDto): Promise<boolean>;
 }

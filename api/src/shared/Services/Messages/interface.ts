@@ -6,6 +6,13 @@ export interface ILanguage {
 
     // Mensagens Entidade: User
     errorCreatedUser: string;
+    errorUserAlreadyExist: string;
+    errorUserNotExist: string;
+    authPasswordIsRequired: string;
+    authVerifyPassOrEmail: string;
+    authSuccessfullyLogin: string;
+    authSuccessfullyLogout: string;
+    authSuccessfullyRefresh: string;
     successCreatedUser: string;
     errorUpdatedUser: string;
     successUpdatedUser: string;

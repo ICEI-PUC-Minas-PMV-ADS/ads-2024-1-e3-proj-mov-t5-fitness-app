@@ -7,6 +7,15 @@ class PortuguesBR implements ILanguage {
 
     // Mensagens Entidade: User
     errorCreatedUser = 'Não foi possível cadastar o usuário';
+    errorUserAlreadyExist =
+        'O email informado já foi cadastrado. Tente fazer login ou se registre com outro email';
+    errorUserNotExist = 'O usuário informado não existe';
+    authVerifyPassOrEmail =
+        'A senha/email informado está incorreto. Por favor, verifique seus dados e tente novamente.';
+    authSuccessfullyLogin = 'Login realizado com sucesso';
+    authPasswordIsRequired = 'Informe sua senha para prosseguir!';
+    authSuccessfullyLogout = 'Usuário deslogado com sucesso!';
+    authSuccessfullyRefresh: 'Refresh Token gerado com sucesso!';
     successCreatedUser = 'Usuário cadastrado com sucesso!';
     errorUpdatedUser = 'Não foi possível atualizar os dados do usuário';
     successUpdatedUser = 'Dados do usuário atualizados com sucesso!';

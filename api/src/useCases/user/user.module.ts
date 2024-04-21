@@ -11,6 +11,9 @@ import {
 } from './controllers';
 
 import { UserRepositoryPrismaService } from 'src/repositoryQueries/user/prisma';
+
+import { UserGroupRepositoryPrismaService } from 'src/repositoryQueries/userGroup/prisma';
+import { HandlePassword } from 'src/shared/Services/HandlePassword';
 import {
     UserCreateService,
     UserDeletedService,
@@ -31,7 +34,9 @@ import {
     providers: [
         // External Providers:
         UserRepositoryPrismaService,
+        UserGroupRepositoryPrismaService,
         Messages,
+        HandlePassword,
         // Internal Providers:
         UserCreateService,
         UserDeletedService,

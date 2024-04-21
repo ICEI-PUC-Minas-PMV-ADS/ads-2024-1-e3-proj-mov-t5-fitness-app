@@ -1,18 +1,28 @@
 generator client {
-  provider        = "prisma-client-js"
-  previewFeatures = ["fullTextSearch"]
+  provider = "prisma-client-js"
 }
 
 datasource db {
-  provider = "postgresql"
-  url      = env("DATABASE_URL")
+  provider          = "postgresql"
+  url               = env("DATABASE_URL")
+  shadowDatabaseUrl = env("SHADOW_DATABASE_URL")
 }
 
 model User {
+  id          Int        @id @default(autoincrement())
+  name        String
+  email       String
+  password    String
+  userGroupId Int?
+  userGroup   UserGroup? @relation(fields: [userGroupId], references: [id])
+  createdAt   DateTime   @default(now())
+  updatedAt   DateTime   @updatedAt
+}
+
+model UserGroup {
   id        Int      @id @default(autoincrement())
-  name      String
-  email     String
-  password  String
+  name      String   @unique
+  users     User[]
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 }

@@ -16,7 +16,7 @@ export class UserUpdateController {
     async update(
         @Param('id') id: string,
         @Body()
-        { name, email, password }: IUpdateUserDto,
+        { name, email, password, userGroupId }: IUpdateUserDto,
     ): IResponse<Promise<IResponseError | IResponseSuccess<IUpdateUserRes>>> {
         try {
             const response = await this.userUpdateService.update({
@@ -24,6 +24,7 @@ export class UserUpdateController {
                 name,
                 email,
                 password,
+                userGroupId,
             });
 
             if (response.isException()) {

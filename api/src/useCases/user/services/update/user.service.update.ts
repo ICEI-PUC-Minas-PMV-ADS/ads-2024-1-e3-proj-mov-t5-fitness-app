@@ -26,15 +26,29 @@ export class UserUpdateService {
         name,
         email,
         password,
+        userGroupId,
     }: IUpdateUserDto): Promise<
         Either<ParametersError, ParametersSuccess<IUpdateUserRes>>
     > {
         try {
+            const userAlreadyExist =
+                await this.userRepositoryQueries.alreadyExist({ id });
+
+            if (!userAlreadyExist)
+                return error(
+                    new ParametersError(
+                        this.messages.language().errorUserNotExist,
+                        Statuscode.INTERNAL_SERVER_ERROR,
+                        TypeError.INTERNAL_SERVER_ERROR,
+                    ),
+                );
+
             const userUpdated = await this.userRepositoryQueries.update({
                 id,
                 name,
                 email,
                 password,
+                userGroupId,
             });
 
             if (!userUpdated)

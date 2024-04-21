@@ -4,14 +4,21 @@ import { ConfigModule } from '@nestjs/config';
 import { BeforeApplicationShutdown, Module } from '@nestjs/common';
 import { PrismaModule } from './database';
 import { Messages } from './shared/Services';
-import { UserModule } from './useCases';
+import { HandlePassword } from './shared/Services/HandlePassword';
+import { AuthModule, UserGroupModule, UserModule } from './useCases';
 
 // Use Cases Imports
 
 @Module({
-    imports: [ConfigModule.forRoot(), PrismaModule, UserModule],
+    imports: [
+        ConfigModule.forRoot(),
+        PrismaModule,
+        UserModule,
+        UserGroupModule,
+        AuthModule,
+    ],
     controllers: [],
-    providers: [Messages],
+    providers: [Messages, HandlePassword],
     exports: [],
 })
 export class AppModule implements BeforeApplicationShutdown {

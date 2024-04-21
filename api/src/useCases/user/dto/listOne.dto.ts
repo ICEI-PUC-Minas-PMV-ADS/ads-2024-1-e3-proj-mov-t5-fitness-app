@@ -1,5 +1,13 @@
+import { Optional } from '@prisma/client/runtime/library';
 import { IUserEntity } from '../entities/user.entity';
 
-export type IListOneUserDto = Pick<IUserEntity, 'id'>;
+export interface IListOneUserDto
+    extends Optional<Pick<IUserEntity, 'id' | 'email'>> {
+    config?: {
+        showPassword?: boolean;
+    };
+}
 
-export type IListOneUserRes = Omit<IUserEntity, 'password'>;
+export interface IListOneUserRes extends Omit<IUserEntity, 'password'> {
+    password?: string;
+}
