@@ -2,99 +2,76 @@
 
 Objetivo: Documentar os resultados dos testes de usabilidade realizados no sistema pela equipe, com base no plano de testes pré-definido.
 
-Metodologia:
-
-Os testes foram realizados com usuários reais, utilizando a técnica de teste de usabilidade.
-As ferramentas utilizadas para os testes foram:
-- UsabilityHub  <br>
-- Hotjar
-
-Resultados dos Testes:
-
 <table>
-<tr>
-<td>Caso de Teste	Resultado	Observações
-	
-</td>
-<td>
-CT-01 - Teste de usabilidade da interface do usuário	Aprovado	A maioria dos usuários conseguiu realizar as tarefas com sucesso.
-  <br>
-     CT-02 - Teste de usabilidade da API	Aprovado	A API foi considerada fácil de usar pela maioria dos usuários.
-</td>
-</tr>
+  <tr>
+    <th>Teste</th>
+    <th>Objetivo do Teste</th>
+    <th>Passos</th>
+    <th>Resultado Esperado</th>
+  </tr>
+  <tr>
+    <td>Cadastro/Login na plataforma (RF-01)</td>
+    <td>Verificar se o usuário consegue se cadastrar e fazer login na plataforma.</td>
+    <td>
+      <ol>
+        <li>Abrir o aplicativo.</li>
+        <li>Clicar em "Iniciar".</li>
+        <li>Clicar em "Criar uma conta".</li>
+        <li>Preencher os campos necessários e clicar em "Cadastrar".</li>
+        <li>Fazer logout.</li>
+        <li>Tentar fazer login com as credenciais cadastradas.</li>
+      </ol>
+    </td>
+    <td>O usuário deve ser capaz de se cadastrar e fazer login com sucesso.</td>
+  </tr>
+  <tr>
+    <td>Recuperação de Senha (RF-02)</td>
+    <td>Verificar se o usuário consegue recuperar sua senha.</td>
+    <td>
+      <ol>
+        <li>Abrir o aplicativo.</li>
+        <li>Clicar em "Iniciar".</li>
+        <li>Clicar em "Esqueceu sua senha?".</li>
+        <li>Inserir o email associado à conta e seguir as instruções enviadas para esse email para redefinir a senha.</li>
+      </ol>
+    </td>
+    <td>O usuário deve ser capaz de redefinir sua senha com sucesso.</td>
+  </tr>
+  <tr>
+    <td>Alteração de Dados Cadastrais (RF-03)</td>
+    <td>Verificar se o usuário consegue alterar seus dados cadastrais.</td>
+    <td>
+      <ol>
+        <li>Fazer login no aplicativo.</li>
+        <li>Acessar a tela de perfil do usuário.</li>
+        <li>Alterar os dados desejados e salvar as alterações.</li>
+      </ol>
+    </td>
+    <td>O usuário deve ser capaz de alterar seus dados cadastrais com sucesso.</td>
+  </tr>
+  <tr>
+    <td>Criação de Plano de Treino (RF-06)</td>
+    <td>Verificar se o treinador consegue criar um plano de treino.</td>
+    <td>
+      <ol>
+        <li>Fazer login no aplicativo como treinador.</li>
+        <li>Acessar a tela de criação de plano de treino.</li>
+        <li>Adicionar exercícios de uma lista disponível e definir detalhes como o número de séries, repetições e descanso entre as séries.</li>
+      </ol>
+    </td>
+    <td>O treinador deve ser capaz de criar um plano de treino com sucesso.</td>
+  </tr>
+  <tr>
+    <td>Configurações (RF-08)</td>
+    <td>Verificar se o usuário consegue configurar o local de treino, o nível de condicionamento físico e selecionar o exercício que deseja fazer do plano de treino.</td>
+    <td>
+      <ol>
+        <li>Fazer login no aplicativo.</li>
+        <li>Acessar a tela de configurações.</li>
+        <li>Alterar as configurações desejadas e salvar as alterações.</li>
+      </ol>
+    </td>
+    <td>O usuário deve ser capaz de alterar as configurações com sucesso.</td>
+  </tr>
+</table>
 
-<tr>
-<td>
-
-<tr>
-<td>
-  
-Pontos Fortes:
-
-</td>
-<td>
-A interface do usuário é intuitiva e fácil de usar.
-	 <br>
-A API está bem documentada e fácil de usar.
-
-</td>
-</tr>
-
-<tr>
-<td>
-Pontos Fracos:
-</td>
-<td> 
-	
-Alguns usuários tiveram dificuldade em encontrar algumas funcionalidades.
- <br>
-A API não possui um sistema de autenticação e autorização.
-
-</td>
-</tr>
-
-<tr>
-<td>
-Melhorias para Próximas Iterações:
-</td>
-<td>
-	
-Melhorar a visibilidade de algumas funcionalidades.  <br>
-Implementar um sistema de autenticação e autorização para a API.  <br>
-Adicionar mais funcionalidades ao sistema, como a capacidade de criar e gerenciar treinos.  <br>
-</td>
-</tr>
-
-<tr>
-<td>
-Falhas Detectadas:
-</td>
-<td>
-	
-Alguns usuários tiveram dificuldade em encontrar o botão de login.
- <br>
-A API não possui um sistema de gerenciamento de erros.
-</td>
-</tr>
-<tr>
-<td>
-Melhorias Geradas:
-</td>
-<td>
-	
-O botão de login foi movido para um local mais visível.
- <br>
-A equipe está trabalhando na implementação de um sistema de gerenciamento de erros para a API.
-</td>
-</tr>
-<tr>
-<td>
-Conclusão:
-</td>
-<td>
-	
-Os testes de usabilidade foram bem-sucedidos e o sistema está pronto para ser lançado. 
- <br>
-A equipe continuará a trabalhar na melhoria do sistema e na adição de novas funcionalidades.
-</td>
-</tr>
