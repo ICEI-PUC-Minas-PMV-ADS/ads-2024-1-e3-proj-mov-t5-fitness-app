@@ -6,8 +6,9 @@ Metodologia:
 
 Os testes foram realizados com usuários reais, utilizando a técnica de teste de usabilidade.
 As ferramentas utilizadas para os testes foram:
-UsabilityHub
-Hotjar
+- UsabilityHub  <br>
+- Hotjar
+
 Resultados dos Testes:
 
 <table>
@@ -92,6 +93,8 @@ Conclusão:
 </td>
 <td>
 	
-Os testes de usabilidade foram bem-sucedidos e o sistema está pronto para ser lançado. A equipe continuará a trabalhar na melhoria do sistema e na adição de novas funcionalidades.
+Os testes de usabilidade foram bem-sucedidos e o sistema está pronto para ser lançado. 
+ <br>
+A equipe continuará a trabalhar na melhoria do sistema e na adição de novas funcionalidades.
 </td>
 </tr>
