@@ -32,7 +32,7 @@ Entregar um arquivo banco.sql contendo os scripts de criação das tabelas do ba
 
 ## Tecnologias Utilizadas
 
-As tecnologias utilizadas na aplicação serão: 
+As tecnologias utilizadas na aplicação serão:
 
 - React Native, 
 - Node JS
