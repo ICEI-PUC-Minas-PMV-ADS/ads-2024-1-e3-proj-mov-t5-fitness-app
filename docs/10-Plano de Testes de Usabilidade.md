@@ -16,7 +16,7 @@
 RF-002 - O sistema deve permitir criar, visualizar, atualizar e deletar alunos. </br>
 RF-003 - O sistema deve permitir criar, visualizar, atualizar e deletar treinos. </br>
 RF-004 - O sistema deve permitir o cadastro de novos treinos. </br>
-RF-005 - O sistema deve permitir a consulta dos treinos. </br>
+RF-005 - O sistema deve permitir a consulta dos novos e atuais treinos </br>
 RF-006 - O sistema deve permitir a visualização da frequencia de treinos. </br>
 RF-008 - O sistema deve possuir um cadastro de usuários. </br>
 
