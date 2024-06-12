@@ -55,7 +55,7 @@ Objetivo: Documentar os resultados dos testes de usabilidade realizados no siste
     <td>
       <ol>
         <li>Fazer login no aplicativo como treinador.</li>
-        <li>Acessar a tela de criação de plano de treino.</li>
+        <li>Acessar a tela de criação de planos de treinos.</li>
         <li>Adicionar exercícios de uma lista disponível e definir detalhes como o número de séries, repetições e descanso entre as séries.</li>
       </ol>
     </td>
