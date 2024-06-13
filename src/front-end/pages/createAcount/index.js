@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Pressable, Text, TextInput, View } from 'react-native';
 import { Link, useNavigate } from 'react-router-native';
 import { axiosInstance } from '../../config/axios.js';
+import { useDataUserValidate } from '../../hooks/userDataValidate.js';
 import { createAcountStyles } from './styleds.js';
 
 export const CreateAcount = () => {
@@ -10,10 +11,13 @@ export const CreateAcount = () => {
   const [password, onChanvePassword] = useState('');
 
   const navigate = useNavigate();
+  const validate = useDataUserValidate();
 
   const onCreateUser = async () => {
     try {
-      if (email && password) {
+      const { error, isValid } = validate({ email, password });
+      
+      if (isValid) {
         const { data } = await axiosInstance.post('/user/create', {
           name,
           email,
@@ -23,7 +27,7 @@ export const CreateAcount = () => {
         if (data.statusCode === 201) {
           navigate('/login')
         } else alert(data.message)
-      };
+      } else alert(error);
     } catch (error) {
       console.error(error);
     }
