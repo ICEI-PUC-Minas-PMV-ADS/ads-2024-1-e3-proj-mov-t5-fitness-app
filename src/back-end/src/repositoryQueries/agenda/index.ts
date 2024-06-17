@@ -7,6 +7,8 @@ import {
     IDeleteAgendaDto,
     IListAgendaDto,
     IListAgendaRes,
+    IListDayAgendaDto,
+    IListDayAgendaRes,
     IListOneAgendaDto,
     IListOneAgendaRes,
     IUpdateAgendaDto,
@@ -36,6 +38,8 @@ export interface IAgendaRepositoryQueries {
     }: IListAgendaDto): Promise<IPaginationResponse<IListAgendaRes>>;
 
     listOne({ id }: IListOneAgendaDto): Promise<IListOneAgendaRes>;
+
+    listDay({ day }: IListDayAgendaDto): Promise<IListDayAgendaRes>;
 
     alreadyExist({ id, userId }: IAlreadyExistAgendaDto): Promise<boolean>;
 }
