@@ -11,6 +11,8 @@ import {
     IDeleteAgendaDto,
     IListAgendaDto,
     IListAgendaRes,
+    IListDayAgendaDto,
+    IListDayAgendaRes,
     IListOneAgendaDto,
     IListOneAgendaRes,
     IUpdateAgendaDto,
@@ -146,6 +148,28 @@ export class AgendaRepositoryPrismaService implements IAgendaRepositoryQueries {
             const agenda = await this.prisma.agenda.findFirst({
                 where: {
                     id,
+                },
+                include: {
+                    user: true,
+                    exercises: true,
+                },
+            });
+
+            if (!agenda) return agenda;
+            else return agenda;
+        } catch (error) {
+            console.log(error);
+            throw new Error(error);
+        }
+    }
+
+    async listDay({ day }: IListDayAgendaDto): Promise<IListDayAgendaRes> {
+        try {
+            const agenda = await this.prisma.agenda.findFirst({
+                where: {
+                    days: {
+                        has: day,
+                    },
                 },
                 include: {
                     user: true,
