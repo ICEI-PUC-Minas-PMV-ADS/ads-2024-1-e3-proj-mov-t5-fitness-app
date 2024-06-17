@@ -15,6 +15,7 @@ model User {
   password    String
   userGroupId Int?
   userGroup   UserGroup? @relation(fields: [userGroupId], references: [id])
+  agenda      Agenda[]
   createdAt   DateTime   @default(now())
   updatedAt   DateTime   @updatedAt
 }
@@ -25,4 +26,32 @@ model UserGroup {
   users     User[]
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
+}
+
+model Agenda {
+  id        Int          @id @default(autoincrement())
+  userId    Int
+  user      User         @relation(fields: [userId], references: [id])
+  exercises Exercise[]
+  days      DaysOfWeek[]
+  createdAt DateTime     @default(now())
+  updatedAt DateTime     @updatedAt
+}
+
+model Exercise {
+  id        Int      @id @default(autoincrement())
+  name      String   @unique
+  agenda    Agenda[]
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+enum DaysOfWeek {
+  Monday
+  Tuesday
+  Wednesday
+  Thursday
+  Friday
+  Saturday
+  Sunday
 }
