@@ -1,9 +1,9 @@
-version: "3.8"
+version: "1.0"
 
 services:
   api:
-    container_name: dataopera-clean-architecture-api
-    image: dataopera-clean-architecture-api
+    container_name: fitnes-app-api
+    image: fitnes-app-api
     restart: always
     build:
       context: .

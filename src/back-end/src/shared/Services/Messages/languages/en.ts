@@ -24,6 +24,23 @@ class Ingles implements ILanguage {
     successListUser = 'User successfully listed!';
     errorListUserAll = 'Unable to list users';
     successListUserAll = 'Users listed successfully';
+    errorCreatedAgenda =
+        'It was not possible to register a new agenda for the user';
+    errorAgendaAlreadyExist =
+        'There is already a schedule registered for this user';
+    successCreatedAgenda = 'Agenda successfully registered';
+    successDeletedAgenda = 'Agenda successfully deleted';
+    errorDeletedAgenda = 'The selected agenda could not be deleted';
+    errorListAgendaAll = 'It was not possible to list your agenda';
+    successListAgendaAll = 'Agenda listed successfully!';
+    errorListAgenda = 'Error listing agenda';
+    successListAgenda = 'Agenda listed successfully!';
+    errorAgendaNotExist = 'We could not find an agenda linked to this user!';
+    errorUpdatedAgenda = 'Your agenda could not be updated!';
+    successUpdatedAgenda = 'Agenda updated successfully!';
+    exerciseNotReported =
+        'Your schedule must have at least one exercise linked';
+    daysNotReported = 'You need to enter a day to register a new schedule';
 }
 
 export const ingles = new Ingles();

@@ -22,4 +22,18 @@ export interface ILanguage {
     successListUser: string;
     errorListUserAll: string;
     successListUserAll: string;
+    errorCreatedAgenda: string;
+    errorAgendaAlreadyExist: string;
+    successCreatedAgenda: string;
+    successDeletedAgenda: string;
+    errorDeletedAgenda: string;
+    errorListAgendaAll: string;
+    successListAgendaAll: string;
+    errorListAgenda: string;
+    successListAgenda: string;
+    errorAgendaNotExist: string;
+    errorUpdatedAgenda: string;
+    successUpdatedAgenda: string;
+    exerciseNotReported: string;
+    daysNotReported: string;
 }

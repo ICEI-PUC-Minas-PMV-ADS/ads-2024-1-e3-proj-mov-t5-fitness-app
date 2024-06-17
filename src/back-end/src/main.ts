@@ -18,8 +18,8 @@ async function bootstrap() {
         });
 
     const config = new DocumentBuilder()
-        .setTitle('Data Opera Clean Architecture API')
-        .setDescription('API do dataopera utilizada como template')
+        .setTitle('Fitnes App API')
+        .setDescription('API do Fitnes App utilizada como template')
         .setVersion('1.0.0')
         .addTag('API')
         .build();

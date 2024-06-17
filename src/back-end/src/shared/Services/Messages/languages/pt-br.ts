@@ -25,6 +25,24 @@ class PortuguesBR implements ILanguage {
     successListUser = 'Usuário listado com sucesso!';
     errorListUserAll = 'Não foi possível listar os usuários';
     successListUserAll = 'Usuários listados com sucesso';
+    errorCreatedAgenda =
+        'Não foi possível cadastrar uma nova agenda para o usuário';
+    errorAgendaAlreadyExist = 'Esse usuário já possui uma agenda cadastrada';
+    successCreatedAgenda = 'Agenda cadastrada com sucesso';
+    successDeletedAgenda = 'Agenda deletada com sucesso';
+    errorDeletedAgenda = 'Não foi possível deletar a agenda selecionada';
+    errorListAgendaAll = 'Não foi possível listar suas agendas';
+    successListAgendaAll = 'Agendas listadas com sucesso!';
+    errorListAgenda = 'Erro ao listar a agenda';
+    successListAgenda = 'Agenda listada com sucesso!';
+    errorAgendaNotExist =
+        'Não foi possível localizar uma agenda vinculada a esse usuário!';
+    errorUpdatedAgenda = 'Não foi possível atualizar sua agenda!';
+    successUpdatedAgenda = 'Agenda atualizada com sucesso!';
+    exerciseNotReported =
+        'Sua agenda precisa ter ao menos um exercício vinculado';
+    daysNotReported =
+        'É necessário informar um dia para cadastrar uma nova agenda';
 }
 
 export const portuguesBR = new PortuguesBR();

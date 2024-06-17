@@ -5,7 +5,13 @@ import { BeforeApplicationShutdown, Module } from '@nestjs/common';
 import { PrismaModule } from './database';
 import { Messages } from './shared/Services';
 import { HandlePassword } from './shared/Services/HandlePassword';
-import { AuthModule, UserGroupModule, UserModule } from './useCases';
+
+import {
+    AgendaModule,
+    AuthModule,
+    UserGroupModule,
+    UserModule,
+} from './useCases';
 
 // Use Cases Imports
 
@@ -16,6 +22,7 @@ import { AuthModule, UserGroupModule, UserModule } from './useCases';
         UserModule,
         UserGroupModule,
         AuthModule,
+        AgendaModule,
     ],
     controllers: [],
     providers: [Messages, HandlePassword],

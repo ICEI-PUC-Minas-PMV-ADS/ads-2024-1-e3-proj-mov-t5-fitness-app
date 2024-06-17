@@ -13,4 +13,9 @@ export * from './auth/auth.module';
 export * from './auth/controllers';
 export * from './auth/services';
 
+// --- UseCase Agenda ----
+export * from './agenda/agenda.module';
+export * from './agenda/controllers';
+export * from './agenda/services';
+
 // Exportando os UseCases para o Nível GLOBAL da Aplicação.
