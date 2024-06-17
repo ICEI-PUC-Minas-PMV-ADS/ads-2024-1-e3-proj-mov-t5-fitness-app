@@ -18,4 +18,9 @@ export * from './agenda/agenda.module';
 export * from './agenda/controllers';
 export * from './agenda/services';
 
+// --- UseCase Exercise ----
+export * from './exercise/controllers';
+export * from './exercise/exercise.module';
+export * from './exercise/services';
+
 // Exportando os UseCases para o Nível GLOBAL da Aplicação.

@@ -8,69 +8,61 @@ import {
     success,
 } from 'src/shared/ErrorHandling';
 
-import { AgendaRepositoryPrismaService } from 'src/repositoryQueries/agenda/prisma';
+import { ExerciseRepositoryPrismaService } from 'src/repositoryQueries/exercises/prisma';
 import { Messages } from 'src/shared/Services';
 import { Statuscode } from 'src/shared/interfaces';
 import { TypeError } from 'src/shared/interfaces/TypeErrors';
-import { IUpdateAgendaDto, IUpdateAgendaRes } from '../../dto';
+import { IUpdateExerciseDto, IUpdateExerciseRes } from '../../dto';
 
 @Injectable()
-export class AgendaUpdateService {
+export class ExerciseUpdateService {
     constructor(
-        private agendaRepositoryQueries: AgendaRepositoryPrismaService,
+        private exerciseRepositoryQueries: ExerciseRepositoryPrismaService,
         private messages: Messages,
     ) {}
 
     async update({
         id,
-        days,
-        exercises,
-        userId,
-    }: IUpdateAgendaDto): Promise<
-        Either<ParametersError, ParametersSuccess<IUpdateAgendaRes>>
+        name,
+    }: IUpdateExerciseDto): Promise<
+        Either<ParametersError, ParametersSuccess<IUpdateExerciseRes>>
     > {
         try {
-            const agendaAlreadyExist =
-                await this.agendaRepositoryQueries.alreadyExist({ id, userId });
+            const exerciseAlreadyExist =
+                await this.exerciseRepositoryQueries.alreadyExist({
+                    id,
+                    name,
+                });
 
-            if (!agendaAlreadyExist)
+            if (!exerciseAlreadyExist)
                 return error(
                     new ParametersError(
-                        this.messages.language().errorAgendaNotExist,
+                        this.messages.language().errorExerciseNotExist,
                         Statuscode.INTERNAL_SERVER_ERROR,
                         TypeError.INTERNAL_SERVER_ERROR,
                     ),
                 );
 
-            if (!exercises || exercises.length < 1)
+            if (!name || name.length < 2)
                 return error(
                     new ParametersError(
-                        this.messages.language().exerciseNotReported,
+                        this.messages.language().nameExerciseIsRequired,
                         Statuscode.INTERNAL_SERVER_ERROR,
                         TypeError.INTERNAL_SERVER_ERROR,
                     ),
                 );
 
-            if (!days || days.length < 1)
+            const exerciseUpdated = await this.exerciseRepositoryQueries.update(
+                {
+                    id,
+                    name,
+                },
+            );
+
+            if (!exerciseUpdated)
                 return error(
                     new ParametersError(
-                        this.messages.language().daysNotReported,
-                        Statuscode.INTERNAL_SERVER_ERROR,
-                        TypeError.INTERNAL_SERVER_ERROR,
-                    ),
-                );
-
-            const agendaUpdated = await this.agendaRepositoryQueries.update({
-                id,
-                days,
-                exercises,
-                userId,
-            });
-
-            if (!agendaUpdated)
-                return error(
-                    new ParametersError(
-                        this.messages.language().errorUpdatedAgenda,
+                        this.messages.language().errorUpdatedExercise,
                         Statuscode.BAD_REQUEST,
                         TypeError.BAD_REQUEST,
                     ),
@@ -78,9 +70,9 @@ export class AgendaUpdateService {
 
             return success(
                 new ParametersSuccess(
-                    this.messages.language().successUpdatedAgenda,
+                    this.messages.language().successUpdatedExercise,
                     Statuscode.OK,
-                    agendaUpdated,
+                    exerciseUpdated,
                 ),
             );
         } catch (error) {

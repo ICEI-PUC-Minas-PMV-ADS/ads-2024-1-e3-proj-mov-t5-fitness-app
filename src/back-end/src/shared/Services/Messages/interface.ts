@@ -36,4 +36,15 @@ export interface ILanguage {
     successUpdatedAgenda: string;
     exerciseNotReported: string;
     daysNotReported: string;
+    errorExerciseAlreadyExist: string;
+    nameExerciseIsRequired: string;
+    errorCreatedExercise: string;
+    successCreatedExercise: string;
+    errorDeletedExercise: string;
+    successDeletedExercise: string;
+    errorListExerciseAll: string;
+    successListExerciseAll: string;
+    errorExerciseNotExist: string;
+    errorUpdatedExercise: string;
+    successUpdatedExercise: string;
 }

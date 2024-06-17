@@ -8,69 +8,56 @@ import {
     success,
 } from 'src/shared/ErrorHandling';
 
-import { AgendaRepositoryPrismaService } from 'src/repositoryQueries/agenda/prisma';
+import { ExerciseRepositoryPrismaService } from 'src/repositoryQueries/exercises/prisma';
 import { Messages } from 'src/shared/Services';
 import { Statuscode } from 'src/shared/interfaces';
 import { TypeError } from 'src/shared/interfaces/TypeErrors';
-import { ICreateAgendaDto, ICreateAgendaRes } from '../../dto';
+import { ICreateExerciseDto, ICreateExerciseRes } from '../../dto';
 
 @Injectable()
-export class AgendaCreateService {
+export class ExerciseCreateService {
     constructor(
-        private agendaRepositoryQueries: AgendaRepositoryPrismaService,
+        private exerciseRepositoryQueries: ExerciseRepositoryPrismaService,
         private messages: Messages,
     ) {}
 
     async create({
-        days,
-        exercises,
-        userId,
-    }: ICreateAgendaDto): Promise<
-        Either<ParametersError, ParametersSuccess<ICreateAgendaRes>>
+        name,
+    }: ICreateExerciseDto): Promise<
+        Either<ParametersError, ParametersSuccess<ICreateExerciseRes>>
     > {
         try {
-            const agendaAlreadyExist =
-                await this.agendaRepositoryQueries.alreadyExist({
-                    userId,
+            const exerciseAlreadyExist =
+                await this.exerciseRepositoryQueries.alreadyExist({
+                    name,
                 });
 
-            if (agendaAlreadyExist)
+            if (exerciseAlreadyExist)
                 return error(
                     new ParametersError(
-                        this.messages.language().errorAgendaAlreadyExist,
+                        this.messages.language().errorExerciseAlreadyExist,
                         Statuscode.INTERNAL_SERVER_ERROR,
                         TypeError.INTERNAL_SERVER_ERROR,
                     ),
                 );
 
-            if (!exercises || exercises.length < 1)
+            if (!name || name.length < 2)
                 return error(
                     new ParametersError(
-                        this.messages.language().exerciseNotReported,
+                        this.messages.language().nameExerciseIsRequired,
                         Statuscode.INTERNAL_SERVER_ERROR,
                         TypeError.INTERNAL_SERVER_ERROR,
                     ),
                 );
 
-            if (!days || days.length < 1)
-                return error(
-                    new ParametersError(
-                        this.messages.language().daysNotReported,
-                        Statuscode.INTERNAL_SERVER_ERROR,
-                        TypeError.INTERNAL_SERVER_ERROR,
-                    ),
-                );
-
-            const newAgenda = await this.agendaRepositoryQueries.create({
-                days,
-                exercises,
-                userId,
+            const newExercise = await this.exerciseRepositoryQueries.create({
+                name,
             });
 
-            if (!newAgenda)
+            if (!newExercise)
                 return error(
                     new ParametersError(
-                        this.messages.language().errorCreatedAgenda,
+                        this.messages.language().errorCreatedExercise,
                         Statuscode.INTERNAL_SERVER_ERROR,
                         TypeError.INTERNAL_SERVER_ERROR,
                     ),
@@ -78,9 +65,9 @@ export class AgendaCreateService {
 
             return success(
                 new ParametersSuccess(
-                    this.messages.language().successCreatedAgenda,
+                    this.messages.language().successCreatedExercise,
                     Statuscode.CREATED,
-                    newAgenda,
+                    newExercise,
                 ),
             );
         } catch (error) {

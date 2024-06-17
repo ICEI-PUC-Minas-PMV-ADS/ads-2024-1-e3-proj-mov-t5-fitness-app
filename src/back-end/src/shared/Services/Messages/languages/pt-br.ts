@@ -43,6 +43,21 @@ class PortuguesBR implements ILanguage {
         'Sua agenda precisa ter ao menos um exercício vinculado';
     daysNotReported =
         'É necessário informar um dia para cadastrar uma nova agenda';
+    errorExerciseAlreadyExist = 'Esse exercício já foi cadastrado no sistema!';
+    nameExerciseIsRequired =
+        'Atenção! É necessário informar um nome para o exercício';
+    errorCreatedExercise = 'Erro ao Tentar Cadastrar um Novo Exercício!';
+    successCreatedExercise = 'Exercício cadastrado com sucesso!';
+    errorDeletedExercise = 'Não foi possível deletar o exercício';
+    successDeletedExercise = 'Exercício deletado com sucesso!';
+    errorListExerciseAll = 'Erro ao listar os exercícios!';
+    successListExerciseAll = 'Exercícios listados com sucesso!';
+    errorListExercise = 'Erro ao listar o exercício!';
+    successListExercise = 'Exercício listado com sucesso!';
+    errorExerciseNotExist =
+        'Não foi possível localizar o exercício selecionado';
+    errorUpdatedExercise = 'Erro ao atualizar o exercício!';
+    successUpdatedExercise = 'Exercício atualizado com sucesso!';
 }
 
 export const portuguesBR = new PortuguesBR();

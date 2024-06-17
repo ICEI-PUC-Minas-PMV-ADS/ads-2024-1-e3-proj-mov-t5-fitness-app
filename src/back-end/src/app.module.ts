@@ -9,10 +9,10 @@ import { HandlePassword } from './shared/Services/HandlePassword';
 import {
     AgendaModule,
     AuthModule,
+    ExerciseModule,
     UserGroupModule,
     UserModule,
 } from './useCases';
-
 // Use Cases Imports
 
 @Module({
@@ -23,6 +23,7 @@ import {
         UserGroupModule,
         AuthModule,
         AgendaModule,
+        ExerciseModule,
     ],
     controllers: [],
     providers: [Messages, HandlePassword],
