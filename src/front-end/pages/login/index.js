@@ -22,7 +22,9 @@ export const LoginPage = () => {
           password,
         });
 
+        
         if (data.statusCode === 200) {
+          console.log(data);
           navigate('/hello')
         } else alert(data.message);
         
