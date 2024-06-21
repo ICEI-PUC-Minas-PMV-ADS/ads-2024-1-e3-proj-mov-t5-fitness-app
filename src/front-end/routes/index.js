@@ -1,6 +1,6 @@
 import { NativeRouter, Route, Routes } from "react-router-native";
 import { CreateAcount } from "../pages/createAcount";
-import { Hello } from "../pages/hello";
+import { Gateway } from "../pages/gateway";
 import { HomePage } from "../pages/homePage";
 import { LoginPage } from "../pages/login";
 
@@ -11,7 +11,7 @@ export const RoutesConfig = () => {
         <Route exact path="/"  element={<HomePage />} />
         <Route path="/login"  element={<LoginPage />} />
         <Route path="/register"  element={<CreateAcount />} />
-        <Route path="/hello"  element={<Hello />} />
+        <Route path="/gateway"  element={<Gateway />} />
       </Routes>
     </NativeRouter>
   )

@@ -1,0 +1,33 @@
+message: Please cite this software using these metadata.
+title: Fitnes App
+authors:
+
+
+
+  - family-names: Almeida Amorim 
+    given-names: Thiago  
+  - family-names: Pereira de Aquino Junior
+    given-names: Wilian  
+  - family-names: Sato 
+    given-names: Roger  
+  - family-names: Apolinário do Nascimento 
+    given-names: Izabela  
+  - family-names: Augusto França da Silva 
+    given-names: Breno  
+  - family-names: Nicoly Dias Matos 
+    given-names: Bianca  
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: 
+    given-names: 
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: de Macêdo Neto
+    given-names: Cristiano
+keywords:
+  - Gestão
+  - Academia
+  - Exercícios
+repository-code: https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-fitness-app 
+version: 1.0.0
+date-released: 2024-06-20
