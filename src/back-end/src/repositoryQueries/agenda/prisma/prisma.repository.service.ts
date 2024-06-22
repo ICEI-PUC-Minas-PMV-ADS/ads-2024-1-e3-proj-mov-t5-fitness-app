@@ -163,13 +163,17 @@ export class AgendaRepositoryPrismaService implements IAgendaRepositoryQueries {
         }
     }
 
-    async listDay({ day }: IListDayAgendaDto): Promise<IListDayAgendaRes> {
+    async listDay({
+        day,
+        userId,
+    }: IListDayAgendaDto): Promise<IListDayAgendaRes> {
         try {
             const agenda = await this.prisma.agenda.findFirst({
                 where: {
                     days: {
                         has: day,
                     },
+                    userId,
                 },
                 include: {
                     user: true,

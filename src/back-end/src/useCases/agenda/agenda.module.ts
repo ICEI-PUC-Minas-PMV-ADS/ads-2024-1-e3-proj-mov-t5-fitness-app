@@ -6,6 +6,7 @@ import {
     AgendaCreateController,
     AgendaDeletedController,
     AgendaListAllController,
+    AgendaListDayController,
     AgendaListOneController,
     AgendaUpdateController,
 } from './controllers';
@@ -17,6 +18,7 @@ import {
     AgendaCreateService,
     AgendaDeletedService,
     AgendaListAllService,
+    AgendaListDayService,
     AgendaListOneService,
     AgendaUpdateService,
 } from './services';
@@ -29,6 +31,7 @@ import {
         AgendaListAllController,
         AgendaListOneController,
         AgendaUpdateController,
+        AgendaListDayController,
     ],
     providers: [
         // External Providers:
@@ -41,6 +44,7 @@ import {
         AgendaListAllService,
         AgendaListOneService,
         AgendaUpdateService,
+        AgendaListDayService,
     ],
     exports: [],
 })

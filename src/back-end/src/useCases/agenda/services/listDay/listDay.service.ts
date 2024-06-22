@@ -23,20 +23,22 @@ export class AgendaListDayService {
 
     async listDay({
         day,
+        userId,
     }: IListDayAgendaDto): Promise<
         Either<ParametersError, ParametersSuccess<IListDayAgendaRes>>
     > {
         try {
             const agenda = await this.agendaRepositoryQueries.listDay({
                 day,
+                userId,
             });
 
-            if (!agenda.id)
+            if (!agenda)
                 return error(
                     new ParametersError(
-                        this.messages.language().errorListAgenda,
-                        Statuscode.BAD_REQUEST,
-                        TypeError.BAD_REQUEST,
+                        this.messages.language().errorAgendaNotExist,
+                        Statuscode.NO_CONTENT,
+                        TypeError.NO_CONTENT,
                     ),
                 );
 

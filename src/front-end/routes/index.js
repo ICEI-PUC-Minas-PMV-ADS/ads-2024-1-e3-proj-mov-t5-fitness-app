@@ -9,8 +9,8 @@ export const RoutesConfig = () => {
     <NativeRouter>
       <Routes>
         <Route exact path="/"  element={<HomePage />} />
-        <Route path="/login"  element={<LoginPage />} />
         <Route path="/register"  element={<CreateAcount />} />
+        <Route path="/login"  element={<LoginPage />} />
         <Route path="/gateway"  element={<Gateway />} />
       </Routes>
     </NativeRouter>

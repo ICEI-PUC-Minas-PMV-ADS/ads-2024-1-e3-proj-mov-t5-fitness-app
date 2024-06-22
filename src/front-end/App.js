@@ -1,5 +1,10 @@
+import { UserContextProvider } from './context/userContext';
 import { RoutesConfig } from './routes';
 
 export default function App() {
-  return <RoutesConfig />
+  return (
+    <UserContextProvider>
+      <RoutesConfig />
+    </UserContextProvider>
+  ) 
 }

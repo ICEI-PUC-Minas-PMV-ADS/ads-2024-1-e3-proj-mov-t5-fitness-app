@@ -35,4 +35,13 @@ export const homePageStyles = StyleSheet.create({
     fontWeight: "bold",
     fontSize: '1rem'
   },
+  subTitle: {
+    fontSize: '.8rem',
+    color: "#fff"
+  },
+  link: {
+    color: '#0cfb8c',
+    fontWeight: 'bold',
+    marginBottom: 15
+  }
 });
