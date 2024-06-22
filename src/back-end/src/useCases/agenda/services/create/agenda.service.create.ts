@@ -23,28 +23,24 @@ export class AgendaCreateService {
         private messages: Messages,
     ) {}
 
+    private getRandomExercises(
+        arr: {
+            id: number;
+        }[],
+        num: number,
+    ) {
+        const shuffled = arr.sort(() => 0.5 - Math.random());
+        return shuffled.slice(0, num);
+    }
+
     async create({
         days,
         exercises,
         userId,
     }: ICreateAgendaDto): Promise<
-        Either<ParametersError, ParametersSuccess<ICreateAgendaRes>>
+        Either<ParametersError, ParametersSuccess<ICreateAgendaRes[]>>
     > {
         try {
-            const agendaAlreadyExist =
-                await this.agendaRepositoryQueries.alreadyExist({
-                    userId,
-                });
-
-            if (agendaAlreadyExist)
-                return error(
-                    new ParametersError(
-                        this.messages.language().errorAgendaAlreadyExist,
-                        Statuscode.INTERNAL_SERVER_ERROR,
-                        TypeError.INTERNAL_SERVER_ERROR,
-                    ),
-                );
-
             if (!exercises || exercises.length < 1) {
                 const dataAutoExercises =
                     await this.exercisesRepositoryQueries.list({
@@ -69,22 +65,28 @@ export class AgendaCreateService {
                     }));
             }
 
-            if (!days || days.length < 1)
-                return error(
-                    new ParametersError(
-                        this.messages.language().daysNotReported,
-                        Statuscode.INTERNAL_SERVER_ERROR,
-                        TypeError.INTERNAL_SERVER_ERROR,
-                    ),
-                );
+            const newAgendas = [];
 
-            const newAgenda = await this.agendaRepositoryQueries.create({
-                days,
-                exercises,
-                userId,
-            });
+            for (const day of days) {
+                let data = undefined;
 
-            if (!newAgenda)
+                const exist = await this.agendaRepositoryQueries.listDay({
+                    day,
+                    userId,
+                });
+
+                if (!exist) {
+                    data = await this.agendaRepositoryQueries.create({
+                        day,
+                        exercises: this.getRandomExercises(exercises, 6),
+                        userId,
+                    });
+                }
+
+                newAgendas.push(data);
+            }
+
+            if (!newAgendas || newAgendas.length < 1)
                 return error(
                     new ParametersError(
                         this.messages.language().errorCreatedAgenda,
@@ -97,7 +99,7 @@ export class AgendaCreateService {
                 new ParametersSuccess(
                     this.messages.language().successCreatedAgenda,
                     Statuscode.CREATED,
-                    newAgenda,
+                    newAgendas,
                 ),
             );
         } catch (error) {

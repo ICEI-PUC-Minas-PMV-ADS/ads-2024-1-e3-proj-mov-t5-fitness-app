@@ -8,7 +8,6 @@ import {
     AgendaListAllController,
     AgendaListDayController,
     AgendaListOneController,
-    AgendaUpdateController,
 } from './controllers';
 
 import { AgendaRepositoryPrismaService } from 'src/repositoryQueries/agenda/prisma';
@@ -21,7 +20,6 @@ import {
     AgendaListAllService,
     AgendaListDayService,
     AgendaListOneService,
-    AgendaUpdateService,
 } from './services';
 
 @Module({
@@ -31,7 +29,6 @@ import {
         AgendaDeletedController,
         AgendaListAllController,
         AgendaListOneController,
-        AgendaUpdateController,
         AgendaListDayController,
     ],
     providers: [
@@ -45,7 +42,6 @@ import {
         AgendaDeletedService,
         AgendaListAllService,
         AgendaListOneService,
-        AgendaUpdateService,
         AgendaListDayService,
     ],
     exports: [],

@@ -16,7 +16,7 @@ export class AgendaListOneController {
     async listOne(
         @Query() { id, userId }: IListOneAgendaDto,
     ): IResponse<
-        Promise<IResponseError | IResponseSuccess<IListOneAgendaRes>>
+        Promise<IResponseError | IResponseSuccess<IListOneAgendaRes[]>>
     > {
         try {
             const response = await this.agendaListOneService.listOne({

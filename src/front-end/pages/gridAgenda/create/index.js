@@ -9,7 +9,7 @@ import { homePageStyles } from "./styleds";
 
 export const CreateView = () => {
 
-  const { agenda, userId, handleSetAgenda } = useContext(UserContext);
+  const { agenda, userId } = useContext(UserContext);
 
   const [dataGrid, setDataGrid] = useState(AgendaMock);
 
@@ -26,7 +26,7 @@ export const CreateView = () => {
 
   const generateDataGrid = () => {
     const newDataGrid = dataGrid.map((day) => {
-      if (agenda && agenda.days && agenda.days.includes(day.key)) day.active = true;
+      if (agenda && agenda.some((agend) => agend.days.includes(day.key))) day.active = true;
       return day
     });
 
@@ -46,7 +46,6 @@ export const CreateView = () => {
       });
 
       if (data.statusCode === 201) {
-        handleSetAgenda(data.value);
         alert(data.message);
         navigate('/gateway');
       } else alert(data.message);
@@ -57,7 +56,7 @@ export const CreateView = () => {
   };
 
   useEffect(() => {
-    generateDataGrid();
+    if (agenda && agenda.length >= 1) generateDataGrid();
   }, [agenda]);
 
   return (

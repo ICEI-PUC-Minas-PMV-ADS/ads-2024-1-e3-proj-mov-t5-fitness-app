@@ -25,7 +25,7 @@ export class AgendaListOneService {
         id,
         userId,
     }: IListOneAgendaDto): Promise<
-        Either<ParametersError, ParametersSuccess<IListOneAgendaRes>>
+        Either<ParametersError, ParametersSuccess<IListOneAgendaRes[]>>
     > {
         try {
             const agenda = await this.agendaRepositoryQueries.listOne({
@@ -33,7 +33,7 @@ export class AgendaListOneService {
                 userId,
             });
 
-            if (!agenda || !agenda.id)
+            if (!agenda || agenda.length < 1)
                 return error(
                     new ParametersError(
                         this.messages.language().errorListAgenda,

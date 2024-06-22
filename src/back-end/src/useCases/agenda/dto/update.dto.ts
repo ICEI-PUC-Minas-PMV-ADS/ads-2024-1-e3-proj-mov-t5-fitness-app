@@ -1,5 +1,12 @@
+import { $Enums } from '@prisma/client';
 import { IAgendaEntity } from '../entities/agenda.entity';
 
-export type IUpdateAgendaDto = Omit<IAgendaEntity, 'user'>;
+export interface IUpdateAgendaDto
+    extends Omit<IAgendaEntity, 'user' | 'days' | 'exercises'> {
+    days: $Enums.DaysOfWeek[];
+    exercises?: {
+        id: number;
+    }[];
+}
 
 export type IUpdateAgendaRes = IAgendaEntity;

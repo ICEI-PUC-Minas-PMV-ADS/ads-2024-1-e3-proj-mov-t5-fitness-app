@@ -4,6 +4,7 @@ import { Link, useNavigate } from 'react-router-native';
 import imageGraphic from '../../assets/graphic.png';
 import { axiosInstance } from '../../config/axios';
 import { UserContext } from '../../context/userContext';
+import { userDataDefault } from '../../context/userContext/defaultData';
 import { homePageStyles } from './styleds.js';
 
 export const Gateway = () => {
@@ -25,7 +26,10 @@ export const Gateway = () => {
       if (data.statusCode === 200) {
         setRegisterAgenda(true);
         handleSetAgenda(data.value);
-      } else alert('Não foi possível localizar uma agenda vinculada a esse usuário!');
+      } else {
+        handleSetAgenda(userDataDefault);
+        alert('Não foi possível localizar uma agenda vinculada a esse usuário!');
+      }
     } catch (error) {
       alert('Erro interno da aplicação!');
     }
@@ -34,7 +38,7 @@ export const Gateway = () => {
   useEffect(() => {
     if (!isAuth) navigate('/login')
     else getUserData()
-  }, [userId]);
+  }, []);
 
   return (
     <>

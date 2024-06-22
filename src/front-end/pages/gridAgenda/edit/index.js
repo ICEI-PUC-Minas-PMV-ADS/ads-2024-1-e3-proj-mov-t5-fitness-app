@@ -26,7 +26,7 @@ export const EditView = () => {
 
   const generateDataGrid = () => {
     const newDataGrid = dataGrid.map((day) => {
-      if (agenda && agenda.days && agenda.days.includes(day.key)) day.active = true;
+      if (agenda && agenda.some((agend) => agend.days.includes(day.key))) day.active = true;
       return day
     });
 
@@ -36,22 +36,36 @@ export const EditView = () => {
   const handleSaveEdit = async () => {
     try {
 
-      const exercisesData = agenda.exercises.map((exercicie) => ({ id: exercicie.id }));
-      const daysData = dataGrid.filter((day) => {
-        if (day.active) return day;
-      }).map((day) => day.key);
-
-      const { data } = await axiosInstance.put(`agenda/update/${agenda.id}`, {
-        days: daysData,
-        exercises: exercisesData,
-        userId
+      const agendasParaDeletar = agenda.filter((agend) => {
+        if (dataGrid.some((data) => !!(data.key === agend.days && !data.active))) return agend;
       });
 
-      if (data.statusCode === 200) {
-        handleSetAgenda(data.value);
-        alert(data.message);
+
+      for (const agend of agendasParaDeletar) {
+        data = await axiosInstance.delete(`/agenda/delete/${agend.id}`)
+      }
+      
+      const agendsCreated = dataGrid.filter((agend) => {
+        if (agend.active) {
+          if (!agenda.find(data => data.days === agend.key)) return agend;
+        }
+      }).map((agends) => agends.key);
+
+      if (agendsCreated && agendsCreated.length >= 1) {
+        const { data } = await axiosInstance.post(`agenda/create`, {
+          days: agendsCreated,
+          userId
+        });
+
+        if (data.statusCode === 201) {
+          alert('Agenda Atualizada com Sucesso!');
+          navigate('/gateway');
+        } else alert(data.message);
+      } else {
+        alert('Agenda Atualizada com Sucesso!');
         navigate('/gateway');
-      } else alert(data.message);
+      };
+
     } catch (error) {
       console.error(error);
       alert('Erro interno do servidor');

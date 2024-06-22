@@ -7,5 +7,5 @@ export const GridAgenda = () => {
   
   const { agenda } = useContext(UserContext);
 
-  return agenda && agenda.days ? <EditView /> : <CreateView />
+  return agenda && agenda.length >= 1 ? <EditView /> : <CreateView />
 }
