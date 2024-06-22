@@ -13,6 +13,7 @@ import {
 
 import { AgendaRepositoryPrismaService } from 'src/repositoryQueries/agenda/prisma';
 
+import { ExerciseRepositoryPrismaService } from 'src/repositoryQueries/exercises/prisma';
 import { HandlePassword } from 'src/shared/Services/HandlePassword';
 import {
     AgendaCreateService,
@@ -36,6 +37,7 @@ import {
     providers: [
         // External Providers:
         AgendaRepositoryPrismaService,
+        ExerciseRepositoryPrismaService,
         Messages,
         HandlePassword,
         // Internal Providers:

@@ -4,6 +4,7 @@ import { formattedPagingResponse } from 'src/shared/Services';
 import { IPaginationResponse } from 'src/shared/interfaces';
 import { IAgendaRepositoryQueries } from '..';
 
+import { Prisma } from '@prisma/client';
 import {
     IAlreadyExistAgendaDto,
     ICreateAgendaDto,
@@ -143,12 +144,26 @@ export class AgendaRepositoryPrismaService implements IAgendaRepositoryQueries {
         }
     }
 
-    async listOne({ id }: IListOneAgendaDto): Promise<IListOneAgendaRes> {
+    async listOne({
+        id,
+        userId,
+    }: IListOneAgendaDto): Promise<IListOneAgendaRes> {
         try {
-            const agenda = await this.prisma.agenda.findFirst({
-                where: {
+            let filters: Prisma.AgendaWhereInput = undefined;
+
+            if (id)
+                filters = {
                     id,
-                },
+                };
+
+            if (userId)
+                filters = {
+                    ...filters,
+                    userId,
+                };
+
+            const agenda = await this.prisma.agenda.findFirst({
+                where: filters,
                 include: {
                     user: true,
                     exercises: true,

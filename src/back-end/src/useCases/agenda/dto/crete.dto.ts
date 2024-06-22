@@ -2,7 +2,7 @@ import { IAgendaEntity } from '../entities/agenda.entity';
 
 export interface ICreateAgendaDto
     extends Omit<IAgendaEntity, 'id' | 'exercises' | 'user'> {
-    exercises: {
+    exercises?: {
         id: number;
     }[];
 }

@@ -12,7 +12,7 @@ export class AgendaUpdateController {
         private readonly message: Messages,
     ) {}
 
-    @Put('update/:id')
+    @Put('/update/:id')
     async update(
         @Param('id') id: string,
         @Body()

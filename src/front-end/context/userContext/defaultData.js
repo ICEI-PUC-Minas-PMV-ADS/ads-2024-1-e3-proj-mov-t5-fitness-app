@@ -3,5 +3,5 @@ export const userDataDefault = {
   userGroup: undefined,
   userId: undefined,
   email: undefined,
-  agenda: []
+  agenda: undefined
 };

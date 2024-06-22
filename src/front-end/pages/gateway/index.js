@@ -16,12 +16,16 @@ export const Gateway = () => {
 
   const getUserData = async () => {
     try {
-      const { data } = await axiosInstance.get(`agenda/list-day/${userId}`);
+      const { data } = await axiosInstance.get(`/agenda/list/one`, {
+        params: {
+          userId,
+        }
+      });
 
       if (data.statusCode === 200) {
         setRegisterAgenda(true);
         handleSetAgenda(data.value);
-      } else alert(data.message);
+      } else alert('Não foi possível localizar uma agenda vinculada a esse usuário!');
     } catch (error) {
       alert('Erro interno da aplicação!');
     }
