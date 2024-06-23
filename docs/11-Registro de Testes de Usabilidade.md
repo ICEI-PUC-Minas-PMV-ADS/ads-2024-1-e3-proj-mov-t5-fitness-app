@@ -15,7 +15,7 @@ O Registro de Testes de Usabilidade documenta os resultados e as percepções ob
 
 ## Metodologia
 Os testes de usabilidade foram conduzidos por meio de um questionário online elaborado na plataforma Survio. O questionário contém 11 perguntas, onde os usuários avaliam seu nível de satisfação em uma escala de 1 a 5 (sendo 1 “Totalmente Insatisfeito” e 5 “Totalmente Satisfeito”). Participaram do teste 10 usuários, representando diferentes perfis de conhecimento em tecnologia (iniciante, intermediário e avançado). Os participantes foram convidados a realizar tarefas específicas na aplicação enquanto forneciam feedback.
-<br>
+<br><br>
 [ LINK - Questionário de Usabilidade Online ](https://www.survio.com/survey/d/B5E9K1B8V4O4S8P9O)
 
 ## Resultados
