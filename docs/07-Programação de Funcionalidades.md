@@ -8,20 +8,17 @@ Nesta seção, você encontrará uma descrição detalhada das telas desenvolvid
 
 Inicialmente, ao acessar o site, o usuário é direcionado à página inicial, onde tem a opção de iniciar o processo de criação de uma conta ou acessar a tela de login. Para usuários cadastrados, basta fornecer o e-mail e a senha correspondentes. No entanto, se o usuário ainda não estiver cadastrado, será possível registrar-se através do procedimento conduzido pelo sistema.
 
-https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-fitness-app/assets/129282137/0aef374e-63d3-43cd-beb1-1bf9e624ceb6
+Figura 1 - Tela inicial / Cadastro.
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-fitness-app/assets/129282137/dd86fee0-0441-40b5-b470-9dceb81dacae)
 
-Figura 1 - Tela inicial.
-https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-fitness-app/assets/129282137/088c85fa-9ec3-4de1-be42-4f821cfcef3a
+Figura 2 - Tela Cadastro.
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-fitness-app/assets/129282137/cab8e891-af51-4e96-afc1-91cfc1d18dae)
 
-Figura 2 - Login na plataforma.
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-fitness-app/assets/129282137/411f6726-d237-4ffd-9fce-5100655550e2)
-
-Figura 3 - Cadastro na plataforma.
-
-Requisitos atendidos:
-- RF-01 - Realizar cadastro/login na plataforma.
+Figura 3 - Tela Login.
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-fitness-app/assets/129282137/53842a7c-35b9-48aa-a91f-0729fb1acdcb)
 
 <h3>Recuperação de Senha (RF-02)</h3>
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-fitness-app/assets/129282137/27d7ff87-2877-48c4-ae30-4125993d0af3)
 
 Caso o usuário esqueça a senha, é possível solicitar a recuperação através da tela de login. Um e-mail será enviado para o endereço registrado com instruções detalhadas sobre como redefinir a senha.
 
@@ -36,7 +33,8 @@ Requisitos atendidos:
 
 A tela de perfil do aluno permite que o aluno consulte e altere seus dados pessoais. O aluno pode visualizar seus dados, mas não pode editar ou excluir seu perfil.
 
-<img src="img/perfil_aluno.jpeg" alt="Perfil do Aluno" title="Perfil do Aluno" height="400"/>
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-fitness-app/assets/129282137/83d4d9ae-b1ea-42fa-b7d7-4e4c44253c64)
+
 <center>Figura 5 - Tela de perfil do aluno.</center>
 <br><br>
 
@@ -47,7 +45,8 @@ Requisitos atendidos:
 
 A tela do treinador permite que o treinador altere os exercícios dos alunos. O treinador pode visualizar os exercícios dos alunos, mas não pode editar ou excluir os exercícios.
 
-<img src="img/alteracao_exercicio.jpeg" alt="Alteração de Exercício" title="Alteração de Exercício" height="400"/>
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-fitness-app/assets/129282137/1782614d-1ae2-4683-ab9a-af52427a69c5)
+
 <center>Figura 6 - Tela de alteração de exercício.</center>
 <br><br>
 
@@ -58,7 +57,8 @@ Requisitos atendidos:
 
 A tela de consulta de exercícios permite que o treinador consulte os exercícios dos alunos. O treinador pode visualizar os exercícios dos alunos, mas não pode editar ou excluir os exercícios.
 
-<img src="img/consulta_exercicios.jpeg" alt="Consulta de Exercícios" title="Consulta de Exercícios" height="400"/>
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-fitness-app/assets/129282137/85f8c79f-958c-4b2d-a0be-53243c724f3c)
+
 <center>Figura 7 - Tela de consulta de exercícios.</center>
 <br><br>
 
@@ -69,13 +69,12 @@ Requisitos atendidos:
 
 A tela de criação de plano de treino permite que o treinador crie um plano de treino para os alunos com base nos grupos musculares. Além disso, logo após o cadastro, o sistema deve perguntar ao aluno sobre seu condicionamento físico e a frequência semanal de treinos. Essas informações serão usadas para criar um plano de treino inicial.
 
-<img src="img/criacao_plano_treino.jpeg" alt="Criação de Plano de Treino" title="Criação de Plano de Treino" height="400"/>
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-fitness-app/assets/129282137/4c858d43-ff54-4384-a5b8-f151cc0b743e)
+
 <center>Figura 8 - Tela de criação de plano de treino.</center>
-<img src="img/pergunta1.jpeg" alt="Perguntas do condicionamento do aluno" title="Pergunta de condicionamento físico" height="400"/>
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-fitness-app/assets/129282137/8ea5711a-2ee1-4896-a7ca-c124ac215499)
 <center>Figura 9 - Tela de pergunta sobre condicionamento físico.</center>
-<img src="img/pergunta2.jpeg" alt="Perguntas de frequência semanal" title="Pergunta de frequência semanal" height="400"/>
-<center>Figura 10 - Tela de pergunta sobre frequência semanal.</center>
-<br><br>
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-fitness-app/assets/129282137/71cbbd52-2fb9-47c7-9af0-a767c629382b)
 
 Requisitos atendidos:
 - RF-06 - Criação de plano de treino.
@@ -84,7 +83,8 @@ Requisitos atendidos:
 
 Quando um novo aluno decide se matricular, o funcionário pode registrar a matrícula do aluno na tela de matrículas. O sistema gera um número de matrícula e registra os dados do aluno.
 
-<img src="img/registro_matricula.jpeg" alt="Registro de Matrícula" title="Registro de Matrícula" height="400"/>
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-fitness-app/assets/129282137/d231020c-bdfc-486a-a565-898d313e1f67)
+
 <center>Figura 11 - Tela de registro de matrícula.</center>
 <br><br>
 
@@ -95,12 +95,7 @@ Requisitos atendidos:
 
 A tela de configurações permite que o aluno configure o local de treino, o nível de condicionamento físico, a frequência semanal e selecione a meta de treino.
 
-<img src="img/configuracoes.jpeg" alt="Configurações" title="Configurações" height="400"/>
-<center>Figura 12 - Tela de configurações.</center>
-<br><br>
-
-Requisitos atendidos:
-- RF-08 - Configurações.
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-fitness-app/assets/129282137/1316bc5f-36ef-4ea0-8ea4-b97dc2b0de7c)
 
 Instruções de acesso:<br>
 1. Faça o download do arquivo do projeto (ZIP) ou clone do projeto no GitHub;<br>
