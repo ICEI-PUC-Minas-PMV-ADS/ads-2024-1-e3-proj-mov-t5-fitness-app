@@ -8,13 +8,13 @@ Nesta seção, você encontrará uma descrição detalhada das telas desenvolvid
 
 Inicialmente, ao acessar o site, o usuário é direcionado à página inicial, onde tem a opção de iniciar o processo de criação de uma conta ou acessar a tela de login. Para usuários cadastrados, basta fornecer o e-mail e a senha correspondentes. No entanto, se o usuário ainda não estiver cadastrado, será possível registrar-se através do procedimento conduzido pelo sistema.
 
-Figura 1 - Tela inicial / Cadastro.
+<center>Figura 1 - Tela inicial / Cadastro.<center>
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-fitness-app/assets/129282137/454f14ac-8227-4986-9cab-d728c0876d46)
 
-Figura 2 - Tela Cadastro.
+<center>Figura 2 - Tela Cadastro.<center>
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-fitness-app/assets/129282137/27f6e608-f6ca-430a-863d-e6df329eab5c)
 
-Figura 3 - Tela Login.
+<center>Figura 3 - Tela Login.<center>
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-fitness-app/assets/129282137/1cb48c4f-b92c-4094-a57d-52302fce5bab)
 
 <h3>Recuperação de Senha (RF-02)</h3>
