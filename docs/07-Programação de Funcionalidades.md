@@ -8,14 +8,15 @@ Nesta seção, você encontrará uma descrição detalhada das telas desenvolvid
 
 Inicialmente, ao acessar o site, o usuário é direcionado à página inicial, onde tem a opção de iniciar o processo de criação de uma conta ou acessar a tela de login. Para usuários cadastrados, basta fornecer o e-mail e a senha correspondentes. No entanto, se o usuário ainda não estiver cadastrado, será possível registrar-se através do procedimento conduzido pelo sistema.
 
-<br>
 https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-fitness-app/assets/129282137/0aef374e-63d3-43cd-beb1-1bf9e624ceb6
+
 Figura 1 - Tela inicial.
 https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-fitness-app/assets/129282137/088c85fa-9ec3-4de1-be42-4f821cfcef3a
+
 Figura 2 - Login na plataforma.
-https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-fitness-app/assets/129282137/1112a769-4381-40d9-a461-a51ff0a3aa0a
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-fitness-app/assets/129282137/411f6726-d237-4ffd-9fce-5100655550e2)
+
 Figura 3 - Cadastro na plataforma.
-<br><br>
 
 Requisitos atendidos:
 - RF-01 - Realizar cadastro/login na plataforma.
