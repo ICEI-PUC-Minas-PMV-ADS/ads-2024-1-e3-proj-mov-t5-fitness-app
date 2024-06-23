@@ -6,7 +6,8 @@ Nesta seção, você encontrará uma descrição detalhada das telas desenvolvid
 
 <h3>Cadastro/Login na plataforma (RF-01)</h3>
 
-Logo de início ao entrar no site o usuário é direcionado a home page, podendo escolher entre iniciar onde será criada uma conta ou a tela de login, caso tenha sido cadastrado basta informar o e-mail e a senha. Contudo, caso ainda não tenha cadastro, o funcionário irá criar um novo usuário.
+Inicialmente, ao acessar o site, o usuário é direcionado à página inicial, onde tem a opção de iniciar o processo de criação de uma conta ou acessar a tela de login. Para usuários cadastrados, basta fornecer o e-mail e a senha correspondentes. No entanto, se o usuário ainda não estiver cadastrado, será possível registrar-se através do procedimento conduzido pelo sistema.
+
 <br>
 <img src="img/homepage.jpeg" alt="Tela inicial" title="Tela inicial" height="400"/>
 <center>Figura 1 - Tela inicial.</center>
@@ -21,7 +22,7 @@ Requisitos atendidos:
 
 <h3>Recuperação de Senha (RF-02)</h3>
 
-Se o usuário esquecer a senha, ele pode solicitar a recuperação da senha na tela de login. Um e-mail será enviado para o endereço de e-mail registrado com instruções para redefinir a senha.
+Caso o usuário esqueça a senha, é possível solicitar a recuperação através da tela de login. Um e-mail será enviado para o endereço registrado com instruções detalhadas sobre como redefinir a senha.
 
 <img src="img/recuperar_senha.jpeg" alt="Recuperar Senha" title="Recuperar Senha" height="400"/>
 <center>Figura 4 - Tela para recuperação de senha.</center>
