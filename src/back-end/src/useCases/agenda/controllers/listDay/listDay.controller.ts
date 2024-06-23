@@ -1,4 +1,4 @@
-import { Controller, Get } from '@nestjs/common';
+import { Controller, Get, Param } from '@nestjs/common';
 import { DaysOfWeek } from '@prisma/client';
 import { IResponseError, IResponseSuccess } from 'src/shared/ErrorHandling';
 import { Messages } from 'src/shared/Services';
@@ -35,8 +35,10 @@ export class AgendaListDayController {
         }
     }
 
-    @Get('list-day')
-    async listDay(): IResponse<
+    @Get('/list-day/:userId')
+    async listDay(
+        @Param('userId') userId: string,
+    ): IResponse<
         Promise<IResponseError | IResponseSuccess<IListDayAgendaRes>>
     > {
         try {
@@ -44,6 +46,7 @@ export class AgendaListDayController {
 
             const response = await this.agendaListDayService.listDay({
                 day,
+                userId: parseInt(userId),
             });
 
             if (response.isException()) {

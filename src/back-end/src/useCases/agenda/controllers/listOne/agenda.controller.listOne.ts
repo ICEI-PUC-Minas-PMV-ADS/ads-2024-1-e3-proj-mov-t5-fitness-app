@@ -1,8 +1,8 @@
-import { Controller, Get, Param } from '@nestjs/common';
+import { Controller, Get, Query } from '@nestjs/common';
 import { IResponseError, IResponseSuccess } from 'src/shared/ErrorHandling';
 import { Messages } from 'src/shared/Services';
 import { IResponse, Statuscode } from 'src/shared/interfaces';
-import { IListOneAgendaRes } from '../../dto';
+import { IListOneAgendaDto, IListOneAgendaRes } from '../../dto';
 import { AgendaListOneService } from '../../services';
 
 @Controller('agenda')
@@ -12,15 +12,16 @@ export class AgendaListOneController {
         private readonly message: Messages,
     ) {}
 
-    @Get('list/:id')
+    @Get('/list/one')
     async listOne(
-        @Param('id') id: string,
+        @Query() { id, userId }: IListOneAgendaDto,
     ): IResponse<
-        Promise<IResponseError | IResponseSuccess<IListOneAgendaRes>>
+        Promise<IResponseError | IResponseSuccess<IListOneAgendaRes[]>>
     > {
         try {
             const response = await this.agendaListOneService.listOne({
                 id: Number(id),
+                userId: Number(userId),
             });
 
             if (response.isException()) {

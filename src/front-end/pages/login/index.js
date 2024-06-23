@@ -1,13 +1,16 @@
-import { useState } from 'react';
+import { jwtDecode } from "jwt-decode";
+import { useContext, useState } from 'react';
 import { Pressable, Text, TextInput, View } from 'react-native';
 import { Link, useNavigate } from 'react-router-native';
 import { axiosInstance } from '../../config/axios.js';
+import { UserContext } from "../../context/userContext/index.js";
 import { useDataUserValidate } from '../../hooks/userDataValidate.js';
 import { loginStyles } from './styleds.js';
 
 export const LoginPage = () => {
   const [email, onChanveEmail] = useState('');
   const [password, onChanvePassword] = useState('');
+  const { handleLogin } = useContext(UserContext);
 
   const navigate = useNavigate();
   const validate = useDataUserValidate();
@@ -24,8 +27,17 @@ export const LoginPage = () => {
 
         
         if (data.statusCode === 200) {
-          console.log(data);
-          navigate('/hello')
+          const decoded = jwtDecode(data.value);
+
+          if (decoded.user) {
+            handleLogin({
+              isAuth: true,
+              email: decoded.user.email,
+              userGroup: decoded.user.group.name,
+              userId: decoded.user.id,
+            })
+          }
+          navigate('/gateway')
         } else alert(data.message);
         
       } else alert(error);

@@ -4,9 +4,10 @@ import { formattedPagingResponse } from 'src/shared/Services';
 import { IPaginationResponse } from 'src/shared/interfaces';
 import { IAgendaRepositoryQueries } from '..';
 
+import { Prisma } from '@prisma/client';
 import {
     IAlreadyExistAgendaDto,
-    ICreateAgendaDto,
+    ICreateAgendaRepositoryDto,
     ICreateAgendaRes,
     IDeleteAgendaDto,
     IListAgendaDto,
@@ -15,8 +16,6 @@ import {
     IListDayAgendaRes,
     IListOneAgendaDto,
     IListOneAgendaRes,
-    IUpdateAgendaDto,
-    IUpdateAgendaRes,
 } from 'src/useCases/agenda/dto';
 import { IAgendaEntity } from 'src/useCases/agenda/entities/agenda.entity';
 
@@ -25,14 +24,14 @@ export class AgendaRepositoryPrismaService implements IAgendaRepositoryQueries {
     constructor(private prisma: PrismaService) {}
 
     async create({
-        days,
+        day,
         exercises,
         userId,
-    }: ICreateAgendaDto): Promise<ICreateAgendaRes> {
+    }: ICreateAgendaRepositoryDto): Promise<ICreateAgendaRes> {
         try {
             const newAgenda = await this.prisma.agenda.create({
                 data: {
-                    days,
+                    days: day,
                     exercises: {
                         connect: exercises,
                     },
@@ -46,38 +45,6 @@ export class AgendaRepositoryPrismaService implements IAgendaRepositoryQueries {
 
             if (!newAgenda) return newAgenda;
             else return newAgenda;
-        } catch (error) {
-            console.log(error);
-            throw new Error(error);
-        }
-    }
-
-    async update({
-        id,
-        days,
-        exercises,
-        userId,
-    }: IUpdateAgendaDto): Promise<IUpdateAgendaRes> {
-        try {
-            const updatedAgenda = await this.prisma.agenda.update({
-                data: {
-                    days,
-                    exercises: {
-                        connect: exercises,
-                    },
-                    userId,
-                },
-                where: {
-                    id,
-                },
-                include: {
-                    user: true,
-                    exercises: true,
-                },
-            });
-
-            if (!updatedAgenda) return updatedAgenda;
-            else return updatedAgenda;
         } catch (error) {
             console.log(error);
             throw new Error(error);
@@ -143,12 +110,26 @@ export class AgendaRepositoryPrismaService implements IAgendaRepositoryQueries {
         }
     }
 
-    async listOne({ id }: IListOneAgendaDto): Promise<IListOneAgendaRes> {
+    async listOne({
+        id,
+        userId,
+    }: IListOneAgendaDto): Promise<IListOneAgendaRes[]> {
         try {
-            const agenda = await this.prisma.agenda.findFirst({
-                where: {
+            let filters: Prisma.AgendaWhereInput = undefined;
+
+            if (id)
+                filters = {
                     id,
-                },
+                };
+
+            if (userId)
+                filters = {
+                    ...filters,
+                    userId,
+                };
+
+            const agenda = await this.prisma.agenda.findMany({
+                where: filters,
                 include: {
                     user: true,
                     exercises: true,
@@ -163,13 +144,15 @@ export class AgendaRepositoryPrismaService implements IAgendaRepositoryQueries {
         }
     }
 
-    async listDay({ day }: IListDayAgendaDto): Promise<IListDayAgendaRes> {
+    async listDay({
+        day,
+        userId,
+    }: IListDayAgendaDto): Promise<IListDayAgendaRes> {
         try {
             const agenda = await this.prisma.agenda.findFirst({
                 where: {
-                    days: {
-                        has: day,
-                    },
+                    days: day,
+                    userId,
                 },
                 include: {
                     user: true,

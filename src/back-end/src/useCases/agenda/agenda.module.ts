@@ -6,19 +6,20 @@ import {
     AgendaCreateController,
     AgendaDeletedController,
     AgendaListAllController,
+    AgendaListDayController,
     AgendaListOneController,
-    AgendaUpdateController,
 } from './controllers';
 
 import { AgendaRepositoryPrismaService } from 'src/repositoryQueries/agenda/prisma';
 
+import { ExerciseRepositoryPrismaService } from 'src/repositoryQueries/exercises/prisma';
 import { HandlePassword } from 'src/shared/Services/HandlePassword';
 import {
     AgendaCreateService,
     AgendaDeletedService,
     AgendaListAllService,
+    AgendaListDayService,
     AgendaListOneService,
-    AgendaUpdateService,
 } from './services';
 
 @Module({
@@ -28,11 +29,12 @@ import {
         AgendaDeletedController,
         AgendaListAllController,
         AgendaListOneController,
-        AgendaUpdateController,
+        AgendaListDayController,
     ],
     providers: [
         // External Providers:
         AgendaRepositoryPrismaService,
+        ExerciseRepositoryPrismaService,
         Messages,
         HandlePassword,
         // Internal Providers:
@@ -40,7 +42,7 @@ import {
         AgendaDeletedService,
         AgendaListAllService,
         AgendaListOneService,
-        AgendaUpdateService,
+        AgendaListDayService,
     ],
     exports: [],
 })

@@ -28,7 +28,7 @@ CREATE TABLE "UserGroup" (
 CREATE TABLE "Agenda" (
     "id" SERIAL NOT NULL,
     "userId" INTEGER NOT NULL,
-    "days" "DaysOfWeek"[],
+    "days" "DaysOfWeek" NOT NULL,
     "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "updatedAt" TIMESTAMP(3) NOT NULL,
 

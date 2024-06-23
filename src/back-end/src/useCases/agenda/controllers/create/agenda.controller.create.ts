@@ -16,7 +16,9 @@ export class AgendaCreateController {
     async create(
         @Body()
         { days, exercises, userId }: ICreateAgendaDto,
-    ): IResponse<Promise<IResponseError | IResponseSuccess<ICreateAgendaRes>>> {
+    ): IResponse<
+        Promise<IResponseError | IResponseSuccess<ICreateAgendaRes[]>>
+    > {
         try {
             const response = await this.agendaCreateService.create({
                 days,
